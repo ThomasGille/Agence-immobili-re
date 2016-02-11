@@ -33,11 +33,13 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <%= ((String)Eval("PhotoPrincipaleBase64" ))!="" 
+                        <%# (Eval("PhotoPrincipaleBase64" ).ToString())!="" 
                                 ? "<img src=\"data:image/png;base64,\""+ Eval("PhotoPrincipaleBase64" ) + " alt=\"\" class=\"img-responsive\">" 
                                 : "<img src=\"/img/photo_not_avaliable\" alt=\"\" class=\"img-responsive\">" %>
     
-                        
+                        <%--  <%# (Eval("PhotoPrincipaleBase64" ).ToString())!="" 
+                                ? "<img src=\"data:image/png;base64,\""+ Eval("PhotoPrincipaleBase64" ) + " alt=\"\" class=\"img-responsive\">" 
+                                : "<img src=\"/CLientWeb/img/photo_not_availiable.jpg\" alt=\"\" class=\"img-responsive\">" %> --%>
                         <img src="data:image/png;base64,<%# Eval("PhotoPrincipaleBase64" ) %>" alt="" class="img-responsive"><%-- Mettre la vraie photo --%>
                         <div class="caption">
                             <h3 class=""><%# cutString(Eval("Titre").ToString(),22) %></h3>
