@@ -58,3 +58,23 @@ C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\csc.exe
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\vbc.exe
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.dll.config
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.pdb
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.pdb

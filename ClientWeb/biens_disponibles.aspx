@@ -25,17 +25,26 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>--%>
-    <div class="container thumbs"><%-- On affiche les élements dans des miniatures --%>
+    <div class="container thumbs">
+        <%-- On affiche les élements dans des miniatures --%>
         <asp:Repeater ID="rpResultats" runat="server">
             <ItemTemplate>
                 <%--  --%>
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="img/pic1.jpg" alt="" class="img-responsive"><%-- Mettre la vraie photo --%>
+                        <%# (Eval("PhotoPrincipaleBase64" )==null ? ){
+    
+}
+else
+{}
+                        %>
+                        <img src="data:image/png;base64,<%# Eval("PhotoPrincipaleBase64" ) %>" alt="" class="img-responsive"><%-- Mettre la vraie photo --%>
                         <div class="caption">
-                            <h3 class=""><%# cutString(Eval("Titre").ToString(),22) %></h3><%-- On coupe le titre --%>
-                            <p><b>Prix : </b><%#((Double) Eval("Prix")).ToString("C") %></p><%-- Affichage en mode € --%>
+                            <h3 class=""><%# cutString(Eval("Titre").ToString(),22) %></h3>
+                            <%-- On coupe le titre --%>
+                            <p><b>Prix : </b><%#((Double) Eval("Prix")).ToString("C") %></p>
+                            <%-- Affichage en mode € --%>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             <div class="btn-toolbar text-center">
                                 <a href="./DetailsBien.aspx?id=<%# Eval("Id") %>"
