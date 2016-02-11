@@ -1,0 +1,15 @@
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\ServiceWCF.dll.config
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\ServiceWCF.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\ServiceWCF.pdb
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\EntityFramework.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\EntityFramework.SqlServer.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\System.Data.SQLite.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\System.Data.SQLite.EF6.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\System.Data.SQLite.Linq.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\EntityFramework.xml
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\EntityFramework.SqlServer.xml
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\System.Data.SQLite.xml
+C:\Tmp\AgenceImmobiliere\ServiceWCF\obj\Debug\ServiceWCF.csprojResolveAssemblyReference.cache
+C:\Tmp\AgenceImmobiliere\ServiceWCF\obj\Debug\ServiceWCF.dll
+C:\Tmp\AgenceImmobiliere\ServiceWCF\obj\Debug\ServiceWCF.pdb
+C:\Tmp\AgenceImmobiliere\ServiceWCF\bin\SQL\agence.db

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5b7d4123-3e05-4314-a836-7503b56f239b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:22103/Agence.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Agence.wsdl" MetadataType="Wsdl" ID="45cfbd92-81ea-418a-aba3-e9da0fb417d2" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?wsdl" />
+    <MetadataFile FileName="Agence.disco" MetadataType="Disco" ID="bc2f2544-40e5-4f05-90a1-ffb984562be0" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?disco" />
+    <MetadataFile FileName="Agence.xsd" MetadataType="Schema" ID="3ae2103b-5d63-4491-99e5-6d07fc8b608c" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?xsd=xsd3" />
+    <MetadataFile FileName="Agence1.xsd" MetadataType="Schema" ID="7a2370a6-67ff-4d6e-8f2e-417c42f1718e" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?xsd=xsd2" />
+    <MetadataFile FileName="Agence2.xsd" MetadataType="Schema" ID="3d9644f4-b43b-4d1f-935d-f058bb399ada" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?xsd=xsd1" />
+    <MetadataFile FileName="Agence3.xsd" MetadataType="Schema" ID="1a47cac3-1e1c-41e4-9509-56f19b511a2f" SourceId="1" SourceUrl="http://localhost:22103/Agence.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

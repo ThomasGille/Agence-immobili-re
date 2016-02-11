@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiceWCF.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiceWCF.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="CriteresRechercheBiensImmobiliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdresseContient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodePostal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateMiseEnTransaction1" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateMiseEnTransaction2" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTransaction1" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTransaction2" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescriptionContient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnergieChauffage" nillable="true" type="tns:BienImmobilierBase.eEnergieChauffage" />
+      <xs:element minOccurs="0" name="MontantCharges1" type="xs:double" />
+      <xs:element minOccurs="0" name="MontantCharges2" type="xs:double" />
+      <xs:element minOccurs="0" name="NbEtages1" type="xs:int" />
+      <xs:element minOccurs="0" name="NbEtages2" type="xs:int" />
+      <xs:element minOccurs="0" name="NbPieces1" type="xs:int" />
+      <xs:element minOccurs="0" name="NbPieces2" type="xs:int" />
+      <xs:element minOccurs="0" name="NumEtage1" type="xs:int" />
+      <xs:element minOccurs="0" name="NumEtage2" type="xs:int" />
+      <xs:element minOccurs="0" name="Prix1" type="xs:double" />
+      <xs:element minOccurs="0" name="Prix2" type="xs:double" />
+      <xs:element minOccurs="0" name="Surface1" type="xs:double" />
+      <xs:element minOccurs="0" name="Surface2" type="xs:double" />
+      <xs:element minOccurs="0" name="TitreContient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionEffectuee" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tris" nillable="true" type="tns:ArrayOfCriteresRechercheBiensImmobiliers.Tri" />
+      <xs:element minOccurs="0" name="TypeBien" nillable="true" type="tns:BienImmobilierBase.eTypeBien" />
+      <xs:element minOccurs="0" name="TypeChauffage" nillable="true" type="tns:BienImmobilierBase.eTypeChauffage" />
+      <xs:element minOccurs="0" name="TypeTransaction" nillable="true" type="tns:BienImmobilierBase.eTypeTransaction" />
+      <xs:element minOccurs="0" name="Ville" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CriteresRechercheBiensImmobiliers" nillable="true" type="tns:CriteresRechercheBiensImmobiliers" />
+  <xs:simpleType name="BienImmobilierBase.eEnergieChauffage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Aucun" />
+      <xs:enumeration value="Fioul" />
+      <xs:enumeration value="Gaz" />
+      <xs:enumeration value="Electrique" />
+      <xs:enumeration value="Bois" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BienImmobilierBase.eEnergieChauffage" nillable="true" type="tns:BienImmobilierBase.eEnergieChauffage" />
+  <xs:complexType name="ArrayOfCriteresRechercheBiensImmobiliers.Tri">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CriteresRechercheBiensImmobiliers.Tri" type="tns:CriteresRechercheBiensImmobiliers.Tri" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCriteresRechercheBiensImmobiliers.Tri" nillable="true" type="tns:ArrayOfCriteresRechercheBiensImmobiliers.Tri" />
+  <xs:complexType name="CriteresRechercheBiensImmobiliers.Tri">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Champ" type="tns:CriteresRechercheBiensImmobiliers.eChampTri" />
+      <xs:element minOccurs="0" name="Ordre" type="tns:CriteresRechercheBiensImmobiliers.eOrdreTri" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CriteresRechercheBiensImmobiliers.Tri" nillable="true" type="tns:CriteresRechercheBiensImmobiliers.Tri" />
+  <xs:simpleType name="CriteresRechercheBiensImmobiliers.eChampTri">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Id" />
+      <xs:enumeration value="Titre" />
+      <xs:enumeration value="TypeTransaction" />
+      <xs:enumeration value="TypeBien" />
+      <xs:enumeration value="Description" />
+      <xs:enumeration value="Prix" />
+      <xs:enumeration value="MontantCharges" />
+      <xs:enumeration value="DateMiseEnTransaction" />
+      <xs:enumeration value="TransactionEffectuee" />
+      <xs:enumeration value="DateTransaction" />
+      <xs:enumeration value="Surface" />
+      <xs:enumeration value="NbPieces" />
+      <xs:enumeration value="NumEtage" />
+      <xs:enumeration value="NbEtages" />
+      <xs:enumeration value="TypeChauffage" />
+      <xs:enumeration value="EnergieChauffage" />
+      <xs:enumeration value="Adresse" />
+      <xs:enumeration value="CodePostal" />
+      <xs:enumeration value="Ville" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CriteresRechercheBiensImmobiliers.eChampTri" nillable="true" type="tns:CriteresRechercheBiensImmobiliers.eChampTri" />
+  <xs:simpleType name="CriteresRechercheBiensImmobiliers.eOrdreTri">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Montant" />
+      <xs:enumeration value="Descendant" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CriteresRechercheBiensImmobiliers.eOrdreTri" nillable="true" type="tns:CriteresRechercheBiensImmobiliers.eOrdreTri" />
+  <xs:simpleType name="BienImmobilierBase.eTypeBien">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Appartement" />
+      <xs:enumeration value="Maison" />
+      <xs:enumeration value="Garage" />
+      <xs:enumeration value="Terrain" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BienImmobilierBase.eTypeBien" nillable="true" type="tns:BienImmobilierBase.eTypeBien" />
+  <xs:simpleType name="BienImmobilierBase.eTypeChauffage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Aucun" />
+      <xs:enumeration value="Individuel" />
+      <xs:enumeration value="Collectif" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BienImmobilierBase.eTypeChauffage" nillable="true" type="tns:BienImmobilierBase.eTypeChauffage" />
+  <xs:simpleType name="BienImmobilierBase.eTypeTransaction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Vente" />
+      <xs:enumeration value="Location" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BienImmobilierBase.eTypeTransaction" nillable="true" type="tns:BienImmobilierBase.eTypeTransaction" />
+  <xs:complexType name="ResultatListeBiensImmobiliers">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultatOperation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Liste" nillable="true" type="tns:ListeBiensImmobiliers" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultatListeBiensImmobiliers" nillable="true" type="tns:ResultatListeBiensImmobiliers" />
+  <xs:complexType name="ResultatOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErreursBloquantes" nillable="true" type="tns:ArrayOfResultatOperation.Erreur" />
+      <xs:element minOccurs="0" name="ErreursNonBloquantes" nillable="true" type="tns:ArrayOfResultatOperation.Erreur" />
+      <xs:element minOccurs="0" name="SuccesExecution" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultatOperation" nillable="true" type="tns:ResultatOperation" />
+  <xs:complexType name="ArrayOfResultatOperation.Erreur">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResultatOperation.Erreur" nillable="true" type="tns:ResultatOperation.Erreur" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResultatOperation.Erreur" nillable="true" type="tns:ArrayOfResultatOperation.Erreur" />
+  <xs:complexType name="ResultatOperation.Erreur">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:ResultatOperation.eTypeErreur" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultatOperation.Erreur" nillable="true" type="tns:ResultatOperation.Erreur" />
+  <xs:simpleType name="ResultatOperation.eTypeErreur">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ErreurNonBloquante" />
+      <xs:enumeration value="ErreurBloquante" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResultatOperation.eTypeErreur" nillable="true" type="tns:ResultatOperation.eTypeErreur" />
+  <xs:complexType name="ListeBiensImmobiliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="List" nillable="true" type="tns:ArrayOfBienImmobilierBase" />
+      <xs:element minOccurs="0" name="Page" type="xs:int" />
+      <xs:element minOccurs="0" name="PagesCount" type="xs:int" />
+      <xs:element minOccurs="0" name="SelectCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Start" type="xs:int" />
+      <xs:element minOccurs="0" name="TakeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListeBiensImmobiliers" nillable="true" type="tns:ListeBiensImmobiliers" />
+  <xs:complexType name="ArrayOfBienImmobilierBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BienImmobilierBase" nillable="true" type="tns:BienImmobilierBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBienImmobilierBase" nillable="true" type="tns:ArrayOfBienImmobilierBase" />
+  <xs:complexType name="BienImmobilierBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodePostal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateMiseEnTransaction" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTransaction" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="MontantCharges" type="xs:double" />
+      <xs:element minOccurs="0" name="PhotoPrincipaleBase64" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prix" type="xs:double" />
+      <xs:element minOccurs="0" name="Titre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionEffectuee" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TypeBien" type="tns:BienImmobilierBase.eTypeBien" />
+      <xs:element minOccurs="0" name="TypeTransaction" type="tns:BienImmobilierBase.eTypeTransaction" />
+      <xs:element minOccurs="0" name="Ville" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BienImmobilierBase" nillable="true" type="tns:BienImmobilierBase" />
+  <xs:complexType name="ResultatBienImmobilier">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultatOperation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bien" nillable="true" type="tns:BienImmobilier" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultatBienImmobilier" nillable="true" type="tns:ResultatBienImmobilier" />
+  <xs:complexType name="BienImmobilier">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BienImmobilierBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Adresse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnergieChauffage" type="tns:BienImmobilierBase.eEnergieChauffage" />
+          <xs:element minOccurs="0" name="NbEtages" type="xs:int" />
+          <xs:element minOccurs="0" name="NbPieces" type="xs:int" />
+          <xs:element minOccurs="0" name="NumEtage" type="xs:int" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PhotosBase64" nillable="true" type="q1:ArrayOfstring" />
+          <xs:element minOccurs="0" name="Surface" type="xs:double" />
+          <xs:element minOccurs="0" name="TypeChauffage" type="tns:BienImmobilierBase.eTypeChauffage" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BienImmobilier" nillable="true" type="tns:BienImmobilier" />
+  <xs:complexType name="ResultatBool">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultatOperation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Valeur" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultatBool" nillable="true" type="tns:ResultatBool" />
+</xs:schema>

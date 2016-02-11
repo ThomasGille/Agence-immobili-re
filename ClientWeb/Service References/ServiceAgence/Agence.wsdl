@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Agence" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceWCF.DataContracts" />
+      <xsd:import schemaLocation="http://localhost:22103/Agence.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAgence_LireListeBiensImmobiliers_InputMessage">
+    <wsdl:part name="parameters" element="tns:LireListeBiensImmobiliers" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_LireListeBiensImmobiliers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LireListeBiensImmobiliersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_LireDetailsBienImmobilier_InputMessage">
+    <wsdl:part name="parameters" element="tns:LireDetailsBienImmobilier" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_LireDetailsBienImmobilier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LireDetailsBienImmobilierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_AjouterBienImmobilier_InputMessage">
+    <wsdl:part name="parameters" element="tns:AjouterBienImmobilier" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_AjouterBienImmobilier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AjouterBienImmobilierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_ModifierBienImmobilier_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifierBienImmobilier" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_ModifierBienImmobilier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifierBienImmobilierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_SupprimerBienImmobilier_InputMessage">
+    <wsdl:part name="parameters" element="tns:SupprimerBienImmobilier" />
+  </wsdl:message>
+  <wsdl:message name="IAgence_SupprimerBienImmobilier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SupprimerBienImmobilierResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAgence">
+    <wsdl:operation name="LireListeBiensImmobiliers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAgence/LireListeBiensImmobiliers" message="tns:IAgence_LireListeBiensImmobiliers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAgence/LireListeBiensImmobiliersResponse" message="tns:IAgence_LireListeBiensImmobiliers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LireDetailsBienImmobilier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAgence/LireDetailsBienImmobilier" message="tns:IAgence_LireDetailsBienImmobilier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAgence/LireDetailsBienImmobilierResponse" message="tns:IAgence_LireDetailsBienImmobilier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AjouterBienImmobilier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAgence/AjouterBienImmobilier" message="tns:IAgence_AjouterBienImmobilier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAgence/AjouterBienImmobilierResponse" message="tns:IAgence_AjouterBienImmobilier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifierBienImmobilier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAgence/ModifierBienImmobilier" message="tns:IAgence_ModifierBienImmobilier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAgence/ModifierBienImmobilierResponse" message="tns:IAgence_ModifierBienImmobilier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SupprimerBienImmobilier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAgence/SupprimerBienImmobilier" message="tns:IAgence_SupprimerBienImmobilier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAgence/SupprimerBienImmobilierResponse" message="tns:IAgence_SupprimerBienImmobilier_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAgence" type="tns:IAgence">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LireListeBiensImmobiliers">
+      <soap:operation soapAction="http://tempuri.org/IAgence/LireListeBiensImmobiliers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LireDetailsBienImmobilier">
+      <soap:operation soapAction="http://tempuri.org/IAgence/LireDetailsBienImmobilier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AjouterBienImmobilier">
+      <soap:operation soapAction="http://tempuri.org/IAgence/AjouterBienImmobilier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifierBienImmobilier">
+      <soap:operation soapAction="http://tempuri.org/IAgence/ModifierBienImmobilier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SupprimerBienImmobilier">
+      <soap:operation soapAction="http://tempuri.org/IAgence/SupprimerBienImmobilier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Agence">
+    <wsdl:port name="BasicHttpBinding_IAgence" binding="tns:BasicHttpBinding_IAgence">
+      <soap:address location="http://localhost:22103/Agence.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
