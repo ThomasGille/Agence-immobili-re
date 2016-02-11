@@ -33,12 +33,11 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <%# (Eval("PhotoPrincipaleBase64" )==null ? ){
+                        <%= ((String)Eval("PhotoPrincipaleBase64" ))!="" 
+                                ? "<img src=\"data:image/png;base64,\""+ Eval("PhotoPrincipaleBase64" ) + " alt=\"\" class=\"img-responsive\">" 
+                                : "<img src=\"/img/photo_not_avaliable\" alt=\"\" class=\"img-responsive\">" %>
     
-}
-else
-{}
-                        %>
+                        
                         <img src="data:image/png;base64,<%# Eval("PhotoPrincipaleBase64" ) %>" alt="" class="img-responsive"><%-- Mettre la vraie photo --%>
                         <div class="caption">
                             <h3 class=""><%# cutString(Eval("Titre").ToString(),22) %></h3>

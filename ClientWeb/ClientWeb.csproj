@@ -69,6 +69,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biens_disponibles.aspx" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\bg.png" />
+    <Content Include="img\carousel1.jpg" />
+    <Content Include="img\carousel2.jpg" />
+    <Content Include="img\carousel3.jpg" />
+    <Content Include="img\photo_not_available.jpg" />
+    <Content Include="img\pic1.jpg" />
+    <Content Include="img\pic2.jpg" />
+    <Content Include="img\pic3.jpg" />
+    <Content Include="img\white_wall_hash_%402X.png" />
     <Content Include="packages.config" />
     <Content Include="General.Master" />
     <None Include="Service References\ServiceAgence\Agence.wsdl" />
