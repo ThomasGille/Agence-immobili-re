@@ -69,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biens_disponibles.aspx" />
+    <Content Include="css\bootshape.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="DetailsBien.aspx" />
     <Content Include="img\about.jpg" />
     <Content Include="img\bg.png" />
     <Content Include="img\carousel1.jpg" />
@@ -136,6 +139,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsBien.aspx.cs">
+      <DependentUpon>DetailsBien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailsBien.aspx.designer.cs">
+      <DependentUpon>DetailsBien.aspx</DependentUpon>
     </Compile>
     <Compile Include="General.Master.cs">
       <DependentUpon>General.Master</DependentUpon>

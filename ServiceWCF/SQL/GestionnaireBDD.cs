@@ -976,10 +976,10 @@ namespace ServiceWCF.SQL
                 where += " AND " + Const.DB_BIEN_ADRESSE_COLNAME + " LIKE '%" + criteres.AdresseContient.Replace("'", "''") + "%'";
 
             if (!string.IsNullOrEmpty(criteres.CodePostal))
-                where += " AND " + Const.DB_BIEN_CODEPOSTAL_COLNAME + "=" + TraitementsSQL.FSQL(criteres.CodePostal);
+                where += " AND " + Const.DB_BIEN_CODEPOSTAL_COLNAME + " LIKE '" + TraitementsSQL.FSQL(criteres.CodePostal)+"%'";
 
             if (!string.IsNullOrEmpty(criteres.Ville))
-                where += " AND " + Const.DB_BIEN_VILLE_COLNAME + "=" + TraitementsSQL.FSQL(criteres.Ville);
+                where += " AND " + Const.DB_BIEN_VILLE_COLNAME + " LIKE '" + TraitementsSQL.FSQL(criteres.Ville)+"'";
 
             if (where != "")
             {
