@@ -17,25 +17,27 @@ namespace ClientWeb
             {
                 String mId = Request.QueryString["id"];
                 ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId);
-                this.Label1.Text= resultat.Bien.Adresse;
-                this.Label1.Text = resultat.Bien.CodePostal;
-                this.Label1.Text = resultat.Bien.DateMiseEnTransaction.ToString();
-                this.Label1.Text = resultat.Bien.DateTransaction.ToString();
-                this.Label1.Text = resultat.Bien.Description;
-                this.Label1.Text = resultat.Bien.EnergieChauffage.ToString();
-                this.Label1.Text = resultat.Bien.MontantCharges.ToString();
-                this.Label1.Text = resultat.Bien.NbEtages.ToString();
-                this.Label1.Text = resultat.Bien.NbPieces.ToString();
-                this.Label1.Text = resultat.Bien.NumEtage.ToString();
-                //this.Label1.Text = resultat.Bien.PhotoPrincipaleBase64;
-                //this.Label1.Text = resultat.Bien.PhotosBase64;
-                this.Label1.Text = resultat.Bien.Prix.ToString();
-                this.Label1.Text = resultat.Bien.Surface.ToString();
-                this.Label1.Text = resultat.Bien.Titre;
-                this.Label1.Text = resultat.Bien.TransactionEffectuee.ToString();
-                this.Label1.Text = resultat.Bien.TypeBien.ToString();
-                this.Label1.Text = resultat.Bien.TypeChauffage.ToString();
-                this.Label1.Text = resultat.Bien.TypeTransaction.ToString();
+                
+                this.Adresse.Text= "<b>"+this.Adresse.ID + " :</b> " + resultat.Bien.Adresse+ "<br />";
+                this.CodePostal.Text = "<b>" + this.CodePostal.ID + " :</b> " + resultat.Bien.CodePostal + "<br />";
+                this.DateMiseEnTransaction.Text = "<b>" + this.DateMiseEnTransaction.ID + " :</b> " + resultat.Bien.DateMiseEnTransaction.ToString() + "<br />";
+                this.DateTransaction.Text = "<b>" + this.DateTransaction.ID + " :</b> " + resultat.Bien.DateTransaction.ToString() + "<br />";
+                this.Description.Text = "<b>" + this.Description.ID + " :</b> " + resultat.Bien.Description + "<br />";
+                this.EnergieChauffage.Text = "<b>" + this.EnergieChauffage.ID + " :</b> " + resultat.Bien.EnergieChauffage.ToString() + "<br />";
+                this.MontantCharges.Text = "<b>" + this.MontantCharges.ID + " :</b> " + resultat.Bien.MontantCharges.ToString() + "<br />";
+                this.NbEtages.Text = "<b>" + this.NbEtages.ID + " :</b> " + resultat.Bien.NbEtages.ToString() + "<br />";
+                this.NbPieces.Text = "<b>" + this.NbPieces.ID + " :</b> " + resultat.Bien.NbPieces.ToString() + "<br />";
+                this.NumEtage.Text = "<b>" + this.NumEtage.ID + " :</b> " + resultat.Bien.NumEtage.ToString() + "<br />";
+                this.Prix.Text = "<b>" + this.Prix.ID + " :</b> " + resultat.Bien.Prix.ToString() + "<br />";
+                this.Surface.Text = "<b>" + this.Surface.ID + " :</b> " + resultat.Bien.Surface.ToString() + "<br />";
+                this.Titre.Text = "<b>" + this.Titre.ID + " :</b> " + resultat.Bien.Titre + "<br />";
+                this.TransactionEffectuee.Text = "<b>" + this.TransactionEffectuee.ID + " :</b> " + resultat.Bien.TransactionEffectuee.ToString() + "<br />";
+                this.TypeBien.Text = "<b>" + this.TypeBien.ID + " :</b> " + resultat.Bien.TypeBien.ToString() + "<br />";
+                this.TypeChauffage.Text = "<b>" + this.TypeChauffage.ID + " :</b> " + resultat.Bien.TypeChauffage.ToString() + "<br />";
+                this.TypeTransaction.Text = "<b>" + this.TypeTransaction.ID + " :</b> " + resultat.Bien.TypeTransaction.ToString() + "<br />";
+                this.Ville.Text = "<b>" + this.Ville.ID + " :</b> " + resultat.Bien.Ville + "<br />";
+
+                liste =  resultat.Bien.PhotosBase64;
             }
         }
     }
