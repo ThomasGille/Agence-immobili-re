@@ -30,6 +30,8 @@
         <asp:Label ID="TypeTransaction" runat="server" Text="Label"></asp:Label>
         <asp:Label ID="Ville" runat="server" Text="Label"></asp:Label>
 
+
+    
         <!-- Slide gallery -->
         <div class="jumbotron">
             <div class="container">
@@ -42,27 +44,20 @@
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
                         <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
                         <asp:Repeater ID="rpResultats" runat="server">
-                            <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/carousel1.jpg" alt="">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/carousel2.jpg" alt="">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/carousel3.jpg" alt="">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                        </div>
+                            <ItemTemplate>
+                                
+                                <div class='<%# (Container.ItemIndex==0)? "item active" : "item" %>'>
+                                <img src='<%#"data:image/png;base64,"+  Container.DataItem.ToString() %> ' alt="" class="img-responsive">
                             
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            
+                            </ItemTemplate>
                         </asp:Repeater>
-
+                        </div>
 
                         <!--
                             -->

@@ -68,6 +68,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="AjoutBien.aspx" />
     <Content Include="biens_disponibles.aspx" />
     <Content Include="css\bootshape.css" />
     <Content Include="css\bootstrap.css" />
@@ -126,6 +128,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutBien.aspx.cs">
+      <DependentUpon>AjoutBien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjoutBien.aspx.designer.cs">
+      <DependentUpon>AjoutBien.aspx</DependentUpon>
+    </Compile>
     <Compile Include="biens_disponibles.aspx.cs">
       <DependentUpon>biens_disponibles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

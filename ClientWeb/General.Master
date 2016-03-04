@@ -48,6 +48,8 @@
             <li><a href="Default.aspx">Accueil</a></li>
             <li class="active"><a href="./biens_disponibles.aspx">Afficher les biens disponibles</a></li>
             <li><a href="#">Rechercher un bien</a></li>
+              <li><a href="admin.aspx">Administration</a></li>
+              <li><a href="AjoutBien.aspx">Ajouter un bien</a></li>
             <li class="dropdown">
               <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mes biens<b class="caret"></b></a>
               <ul class="dropdown-menu">

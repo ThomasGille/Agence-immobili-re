@@ -10,6 +10,7 @@ namespace ClientWeb
     public partial class DetailsBien : System.Web.UI.Page
     {
         List<ServiceAgence.BienImmobilierBase> liste = null;
+        List<String> mListe;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,7 +38,8 @@ namespace ClientWeb
                 this.TypeTransaction.Text = "<b>" + this.TypeTransaction.ID + " :</b> " + resultat.Bien.TypeTransaction.ToString() + "<br />";
                 this.Ville.Text = "<b>" + this.Ville.ID + " :</b> " + resultat.Bien.Ville + "<br />";
 
-                liste =  resultat.Bien.PhotosBase64;
+                rpResultats.DataSource =  resultat.Bien.PhotosBase64;
+                this.rpResultats.DataBind();
             }
         }
     }
