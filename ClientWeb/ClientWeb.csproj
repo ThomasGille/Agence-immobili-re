@@ -70,22 +70,12 @@
   <ItemGroup>
     <Content Include="admin.aspx" />
     <Content Include="AjoutBien.aspx" />
-    <Content Include="biens_disponibles.aspx" />
-    <Content Include="css\bootshape.css" />
-    <Content Include="css\bootstrap.css" />
     <Content Include="DetailsBien.aspx" />
-    <Content Include="img\about.jpg" />
-    <Content Include="img\bg.png" />
-    <Content Include="img\carousel1.jpg" />
-    <Content Include="img\carousel2.jpg" />
-    <Content Include="img\carousel3.jpg" />
-    <Content Include="img\photo_not_available.jpg" />
-    <Content Include="img\pic1.jpg" />
-    <Content Include="img\pic2.jpg" />
-    <Content Include="img\pic3.jpg" />
-    <Content Include="img\white_wall_hash_%402X.png" />
+    <Content Include="display_result.aspx" />
     <Content Include="packages.config" />
     <Content Include="General.Master" />
+    <Content Include="recherche.aspx" />
+    <Content Include="Home.aspx" />
     <None Include="Service References\ServiceAgence\Agence.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -95,7 +85,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
     <None Include="Service References\ServiceAgence\Agence.disco" />
     <Content Include="Service References\ServiceAgence\ClientWeb.ServiceAgence.ResultatBienImmobilier.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -142,26 +131,19 @@
     <Compile Include="AjoutBien.aspx.designer.cs">
       <DependentUpon>AjoutBien.aspx</DependentUpon>
     </Compile>
-    <Compile Include="biens_disponibles.aspx.cs">
-      <DependentUpon>biens_disponibles.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="biens_disponibles.aspx.designer.cs">
-      <DependentUpon>biens_disponibles.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DetailsBien.aspx.cs">
       <DependentUpon>DetailsBien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DetailsBien.aspx.designer.cs">
       <DependentUpon>DetailsBien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="display_result.aspx.cs">
+      <DependentUpon>display_result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="display_result.aspx.designer.cs">
+      <DependentUpon>display_result.aspx</DependentUpon>
     </Compile>
     <Compile Include="General.Master.cs">
       <DependentUpon>General.Master</DependentUpon>
@@ -175,6 +157,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="recherche.aspx.cs">
+      <DependentUpon>recherche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recherche.aspx.designer.cs">
+      <DependentUpon>recherche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

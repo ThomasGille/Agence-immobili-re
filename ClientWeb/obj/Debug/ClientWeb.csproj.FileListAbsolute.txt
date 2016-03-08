@@ -58,23 +58,83 @@ C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\csc.exe
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\vbc.exe
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\VBCSCompiler.exe
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.dll.config
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\ClientWeb.pdb
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.dll
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.pdb
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\csc.exe
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\vbc.exe
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll.config
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.pdb
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\csc.exe
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\vbc.exe
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll.config
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.pdb
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\csc.exe
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\vbc.exe
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll.config
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.pdb
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Users\Valentin\Documents\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\csc.exe
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Collections.Immutable.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\System.Reflection.Metadata.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\vbc.exe
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\roslyn\VBCSCompiler.exe.config
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll.config
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\ClientWeb.pdb
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.dll
+G:\PROJET ASP LATEST\Projet - Agence immobilière\ClientWeb\obj\Debug\ClientWeb.pdb

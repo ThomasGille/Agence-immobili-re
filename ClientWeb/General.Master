@@ -18,6 +18,15 @@
     <!--Bootshape-->
     <link href="css/bootshape.css" rel="stylesheet">
 
+    <link href="css/jquery.range.css" rel="stylesheet">
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="js/jquery.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootshape.js"></script>
+            <script src="js/jquery.range-min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,16 +54,31 @@
         </div>
         <nav role="navigation" class="collapse navbar-collapse navbar-right">
           <ul class="navbar-nav nav">
-            <li><a href="Default.aspx">Accueil</a></li>
-            <li class="active"><a href="./biens_disponibles.aspx">Afficher les biens disponibles</a></li>
-            <li><a href="#">Rechercher un bien</a></li>
-              <li><a href="admin.aspx">Administration</a></li>
+            <li><a href="admin.aspx">Pannel admin</a></li>
               <li><a href="AjoutBien.aspx">Ajouter un bien</a></li>
-            <li class="dropdown">
+            <li class="active"><a href="display_result.aspx">Afficher les biens disponibles</a></li>
+            <li><a href="./recherche.aspx">Rechercher un bien</a></li>
+            <!--<li class="dropdown">
               <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mes biens<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Afficher mes biens</a></li>
-                <li><a href="#">Rechercher un de mes biens</a></li>
+                <li><a href="display_result.aspx">Afficher mes biens</a></li>
+                <li><a href="recherche.aspx">Rechercher un de mes biens</a></li>
+              </ul>
+            </li>-->
+            <li class="dropdown">
+              <a data-toggle="dropdown" href="#" class="dropdown-toggle">Recherche simple<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li> <form method="get" action="display_result.aspx">
+
+                    <b>Type de transaction : </b>
+                    <select id="type_transaction" name="type_transaction">
+                        <option value="0">Vente</option> 
+                        <option value="1">Location</option> 
+                    </select>
+                    <b>Localisation :</b>
+                    <input type="text" id="town" name="town"/>
+                    <input type="submit" value="Valider" />
+                    </form></li>
               </ul>
             </li>
           </ul>
@@ -70,25 +94,24 @@
 
      <!-- END HEAD -->
 
-    <form id="form1" runat="server">
         <div>
+
+            <form id="form1" runat="server" >
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <%--sera remplacé par le contenu de la page  --%>
             </asp:ContentPlaceHolder>
+             <!-- BEGIN FOOTER -->
+                </form>
+            <!-- Footer -->
+            <div class="footer text-center">
+                <p><b>&copy; 2016 ImoFirst. All Rights Reserved.</b></p>
+            </div><!-- End Footer -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                <%--sera remplacé par les scripts  --%>
+            </asp:ContentPlaceHolder>
         </div>
-    </form>
 
-    <!-- BEGIN FOOTER -->
 
-    <!-- Footer -->
-    <div class="footer text-center">
-        <p><b>&copy; 2016 ImoFirst. All Rights Reserved.</b></p>
-    </div><!-- End Footer -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootshape.js"></script>
   </body>
 </html>

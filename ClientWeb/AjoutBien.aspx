@@ -89,11 +89,12 @@
       &nbsp;<asp:TextBox ID="BoxVille" runat="server"></asp:TextBox>
             <br />
 
-        <asp:fileupload id="flupUpload" runat="Server"  Text="Photo Principale"  />
+        
         <asp:fileupload id="FileuploadGroup" runat="Server"  Text="Photo Principale" AllowMultiple="true" />
         
             
         <asp:Button ID="Button1" runat="server" Text="Valider" OnClick="Button1_Click"/>
         <asp:Label ID="mLabel" runat="server" Text="Je suis le futur texte de validation"></asp:Label>
 
+            </div>
     </asp:Content>

@@ -24,15 +24,29 @@ C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.csproj.GenerateResource.Cache
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.exe
 C:\Users\Thomas\Documents\Visual Studio 2015\Projects\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.pdb
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\bin\Debug\ClientWPF.exe.config
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\bin\Debug\ClientWPF.exe
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\bin\Debug\ClientWPF.pdb
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\MainWindow.baml
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\MainWindow.g.cs
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\App.g.cs
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF_MarkupCompile.cache
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.g.resources
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.Properties.Resources.resources
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.csproj.GenerateResource.Cache
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.exe
-C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.pdb
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.exe.config
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.exe
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.pdb
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.csprojResolveAssemblyReference.cache
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\MainWindow.baml
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\App.g.cs
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF_MarkupCompile.cache
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.g.resources
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.Properties.Resources.resources
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.csproj.GenerateResource.Cache
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.exe
+C:\Users\Valentin\Documents\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.pdb
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.exe.config
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.exe
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\bin\Debug\ClientWPF.pdb
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.csprojResolveAssemblyReference.cache
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\MainWindow.baml
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\MainWindow.g.cs
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\App.g.cs
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF_MarkupCompile.cache
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.g.resources
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.Properties.Resources.resources
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.csproj.GenerateResource.Cache
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.exe
+R:\ProjetAgenceImmobiliereDUT\Projet - Agence immobilière\ClientWPF\obj\Debug\ClientWPF.pdb

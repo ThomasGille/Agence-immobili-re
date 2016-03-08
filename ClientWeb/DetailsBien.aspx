@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
+    <div class="container thumbs">
     <div id="photo">
         <%# (Eval("PhotoPrincipaleBase64" ).ToString())!="" 
                                 ? "<img src=\"data:image/png;base64," +Eval("PhotoPrincipaleBase64" )+"\" alt=\"\" class=\"img-responsive\">" 
@@ -75,4 +75,5 @@
             <!-- End Slide gallery -->
         </div>
     </div>
+        </div>
 </asp:Content>

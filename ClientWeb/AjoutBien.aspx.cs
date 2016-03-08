@@ -22,12 +22,8 @@ namespace ClientWeb
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {
                 ServiceAgence.BienImmobilier mBien = new ServiceAgence.BienImmobilier();
-                //creer un objet Bien complet
-                mBien.DateMiseEnTransaction = null;
-                
-                
-                
-                
+                //On crée un bien complet
+        
                 mBien.Titre = BoxTitre.Text;
                 mBien.Prix = Double.Parse(BoxPrixDemande.Text);
                 mBien.MontantCharges = Double.Parse(BoxMontantCharges.Text);
@@ -41,7 +37,7 @@ namespace ClientWeb
 
 
                 /*
-                Ajouter ces critères dans l'affichage
+                Non affichés lors du mode admin
                 */
 
                 mBien.Description = BoxDescription.Text;
@@ -51,31 +47,35 @@ namespace ClientWeb
                 mBien.NbEtages = int.Parse(BoxNbPiece.Text);
                 mBien.NumEtage = int.Parse(BoxNumEtage.Text);
                 
+                
+
+                mBien.TypeBien = (ServiceAgence.BienImmobilierBase.eTypeBien)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeBien), type_bien.SelectedValue);
+                mBien.TypeChauffage = (ServiceAgence.BienImmobilierBase.eTypeChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeChauffage), type_chauffage.SelectedValue);
+                mBien.EnergieChauffage = (ServiceAgence.BienImmobilierBase.eEnergieChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eEnergieChauffage), type_energie_chauffage.SelectedValue);
+                mBien.TypeTransaction = (ServiceAgence.BienImmobilierBase.eTypeTransaction)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeTransaction), type_transaction.SelectedValue);
+
                 /*
-                Ne fonctionne pas, voir comment mieux caster
+                Création de la galerie de photos
                 */
-                mBien.TypeChauffage = (ServiceAgence.BienImmobilierBase.eTypeChauffage)int.Parse(type_chauffage.SelectedValue);
-                mBien.EnergieChauffage = (ServiceAgence.BienImmobilierBase.eEnergieChauffage)int.Parse(type_energie_chauffage.SelectedValue);
-                mBien.TypeBien = (ServiceAgence.BienImmobilierBase.eTypeBien)int.Parse(type_bien.SelectedValue);
-                mBien.TypeTransaction = (ServiceAgence.BienImmobilierBase.eTypeTransaction)int.Parse(type_transaction.SelectedValue);
-
-
-                //rajouter les photos                       NE MARCHE PAS
-                int iLen = flupUpload.PostedFile.ContentLength;
-                byte[] btArr = new byte[iLen];
-                flupUpload.PostedFile.InputStream.Read(btArr, 0, iLen);
-                mBien.PhotoPrincipaleBase64=(Convert.ToBase64String(btArr));
-
-
-                //Trouver comment faire le multi                       
-                mBien.PhotosBase64 = null;
+                List<String> mListe = new List<string>();
+                int iLen;
+                byte[] btArr;
+                IList<HttpPostedFile> listePhoto =  FileuploadGroup.PostedFiles;
+                foreach (var item in listePhoto)
+                {
+                    iLen = item.ContentLength;
+                    btArr = new byte[iLen];
+                    item.InputStream.Read(btArr, 0, iLen);
+                    mListe.Add((Convert.ToBase64String(btArr)));
+                }
+                mBien.PhotosBase64 = mListe;
 
                 /*
                 ajouter la gestion des erreurs
                 */
                 //On ajoute dans la BD
                 client.AjouterBienImmobilier(mBien);
-                //Modifier le label pour dire que l'action est faite
+                //On modifie le label pour dire que l'action est faite
                 mLabel.Text = "Insertion faite";
             }
 

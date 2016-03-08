@@ -10,7 +10,7 @@
 namespace ClientWeb {
     
     
-    public partial class all {
+    public partial class display_result {
         
         /// <summary>
         /// Contrôle mLabel.

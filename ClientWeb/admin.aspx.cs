@@ -79,6 +79,9 @@ namespace ClientWeb
             BindData();
         }
 
+        /*
+        Ajouter les autres champs que Prix
+        */
         protected void TaskGridView_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             //Retrieve the table from the session object.
@@ -130,8 +133,13 @@ namespace ClientWeb
         {
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {
-                string val = gvResultats.Rows[gvResultats.SelectedIndex+1].Cells[0].Text;
-                client.SupprimerBienImmobilier(val);// A TESTER!
+                List<ServiceAgence.BienImmobilierBase> mList = (List<ServiceAgence.BienImmobilierBase>)Session["TaskTable"];
+                GridViewRow row = gvResultats.Rows[e.RowIndex];
+                ServiceAgence.BienImmobilierBase mBI = mList[row.DataItemIndex];
+                
+                client.SupprimerBienImmobilier(mBI.Id.ToString());
+                mList.Remove(mBI);
+                BindData();
             }
         }
     }
