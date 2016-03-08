@@ -8,33 +8,25 @@
             
 			<h2 style="text-align: center;">Ajouter un bien</h2>
 			
-          <b>Titre : </b>
-          <input class="range-slider-piece-number" />
-          <br />
+          <b>Titre : </b><asp:TextBox runat="server" ID="BoxTitre" /><br />
+          
+          <b>Description : </b>&nbsp;<asp:TextBox ID="BoxDescription" runat="server" Height="58px" Width="207px"></asp:TextBox> <br />
 
-        <b>Description : </b>
-          <textarea rows="3" cols="20"></textarea>
-
-          <br />
-
-			<b>Type de transaction : </b>
-
-            <asp:DropDownList id="type_transaction"
-                    AutoPostBack="False"
-                    runat="server">
-                <asp:ListItem Value="0"> Vente </asp:ListItem>
-                <asp:ListItem Value="1"> Location </asp:ListItem>
+         <b>Type de transaction : </b>
+            <asp:DropDownList id="type_transaction"    AutoPostBack="False"  runat="server">
+                <asp:ListItem Value="0" Text="Vente">  </asp:ListItem>
+                <asp:ListItem Value="1" Text="Location">  </asp:ListItem>
             </asp:DropDownList>
-      <br />
+            <br />
 
-      <b>Type de biens : </b>
+        <b>Type de biens : </b>
         <asp:DropDownList id="type_bien"
                     AutoPostBack="False"
                     runat="server">
-                <asp:ListItem Value="0"> Appartement </asp:ListItem>
-                <asp:ListItem Value="1"> Garage </asp:ListItem>
-                <asp:ListItem Value="2"> Maison </asp:ListItem>
-                <asp:ListItem Value="3"> Terrain </asp:ListItem>
+                <asp:ListItem Value="0" Text="Appartement">  </asp:ListItem>
+                <asp:ListItem Value="1" Text="Garage">  </asp:ListItem>
+                <asp:ListItem Value="2" Text="Maison">  </asp:ListItem>
+                <asp:ListItem Value="3" Text="Terrain">  </asp:ListItem>
             </asp:DropDownList>
       <br />
 
@@ -42,9 +34,9 @@
         <asp:DropDownList id="type_chauffage"
                     AutoPostBack="False"
                     runat="server">
-                <asp:ListItem Value="0"> Aucun </asp:ListItem>
-                <asp:ListItem Value="1"> Individuel </asp:ListItem>
-                <asp:ListItem Value="2"> Collectif </asp:ListItem>
+                <asp:ListItem Value="0" Text="Aucun">  </asp:ListItem>
+                <asp:ListItem Value="1" Text="Individuel">  </asp:ListItem>
+                <asp:ListItem Value="2" Text="Collectif">  </asp:ListItem>
             </asp:DropDownList>
       <br />
 
@@ -52,56 +44,56 @@
         <asp:DropDownList id="type_energie_chauffage"
                     AutoPostBack="False"
                     runat="server">
-                <asp:ListItem Value="0"> Aucun </asp:ListItem>
-                <asp:ListItem Value="1"> Fioul </asp:ListItem>
-                <asp:ListItem Value="2"> Gaz </asp:ListItem>
-                <asp:ListItem Value="3"> Electrique </asp:ListItem>                
-                <asp:ListItem Value="3"> Bois </asp:ListItem>
+                <asp:ListItem Value="0" Text="Aucun">  </asp:ListItem>
+                <asp:ListItem Value="1" Text="Fioul">  </asp:ListItem>
+                <asp:ListItem Value="2" Text="Gaz">  </asp:ListItem>
+                <asp:ListItem Value="3" Text="Electrique">  </asp:ListItem>                
+                <asp:ListItem Value="4" Text="Bois">  </asp:ListItem>
 
             </asp:DropDownList>
       <br />
 
         <b>Montant des charges (&euro;): </b>
-      <input class="range-slider-surface" />
+      &nbsp;<asp:TextBox ID="BoxMontantCharges" runat="server"></asp:TextBox>
       <br />
 
-      <b>Prix demand&eacute; (&euro;): </b>
-      <input class="range-slider-price" />
+      <b>Prix demand&eacute; (&euro;): </b>&nbsp;
+      <asp:TextBox ID="BoxPrixDemande" runat="server"></asp:TextBox>
       <br />
 
       <b>Surface (m²) : </b>
-      <input type="number" min="0" class="range-slider-surface" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxSurface" runat="server"></asp:TextBox>
+            <br />
 
       <b>Nombre de pi&egrave;ces : </b>
-      <input type="number" min="0" class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxNbPiece" runat="server"></asp:TextBox>
+            <br />
 
       <b>Num&eacute;ro d'&eacute;tage : </b>
-      <input type="number" min="0" class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxNumEtage" runat="server"></asp:TextBox>
+            <br />
 
       <b>Nombre d'&eacute;tage : </b>
-      <input type="number" min="0" class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxNbEtage" runat="server"></asp:TextBox>
+            <br />
 
         <b>Adresse : </b>
-      <input class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxAdresse" runat="server"></asp:TextBox>
+            <br />
 
         <b>Code postal : </b>
-      <input name="code_postal" id="code_postal" class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxCodePostal" runat="server"></asp:TextBox>
+            <br />
 
         <b>Ville : </b>
-      <input class="range-slider-piece-number" />
-      <br />
+      &nbsp;<asp:TextBox ID="BoxVille" runat="server"></asp:TextBox>
+            <br />
 
-        <input type="file" name="photo_send_1[]" accept="image/*" multiple/>
-
-      <input type="submit" value="Valider"/>
-        </div>
+        <asp:fileupload id="flupUpload" runat="Server"  Text="Photo Principale"  />
+        <asp:fileupload id="FileuploadGroup" runat="Server"  Text="Photo Principale" AllowMultiple="true" />
+        
+            
+        <asp:Button ID="Button1" runat="server" Text="Valider" OnClick="Button1_Click"/>
+        <asp:Label ID="mLabel" runat="server" Text="Je suis le futur texte de validation"></asp:Label>
 
     </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-</asp:Content>
