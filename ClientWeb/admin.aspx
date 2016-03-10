@@ -12,7 +12,13 @@
           OnRowEditing="TaskGridView_RowEditing" 
           OnRowCancelingEdit="TaskGridView_RowCancelingEdit" 
           OnRowUpdating="TaskGridView_RowUpdating" 
-          OnRowDeleting="TaskGridView_RowDeleting" > 
+          OnRowDeleting="TaskGridView_RowDeleting"
+          AllowSorting="true"
+          OnSorting="gvResultats_Sorting"
+          
+           > 
+
+
         <Columns>
             <asp:BoundField DataField="Id" HeaderText="Id" />
             <asp:BoundField DataField="Titre" HeaderText="Titre" />
@@ -24,7 +30,7 @@
             <asp:BoundField DataField="TypeTransaction" HeaderText="TypeTransaction" />
             <asp:BoundField DataField="TransactionEffectuee" HeaderText="TransactionEffectuee" />
             <asp:BoundField DataField="DateMiseEnTransaction" HeaderText="DateMiseEnTransaction" />
-            <asp:BoundField DataField="DateTransaction" HeaderText="DateTransaction" />
+            <asp:BoundField DataField="DateTransaction" HeaderText="DateTransaction" SortExpression="DateTransaction" />
 
             
             

@@ -104,14 +104,56 @@ namespace ClientWeb
                 {
                     this.mLabel.Text = mResult.ErreursBloquantes.ToString();
                 }
-               
+               //Prix
                 Double mDouble;
-                // probleme de chemin
                 if (Double.TryParse( e.NewValues["Prix"].ToString(),out mDouble)){
                     mResult.Bien.Prix = mDouble;
                     mList[row.DataItemIndex].Prix = mDouble;
-                   
                 }
+                //titre
+                String mString;
+                mString =e.NewValues["Titre"].ToString();
+                mResult.Bien.Titre = mString;
+                mList[row.DataItemIndex].Titre = mString;
+                //MontantCharges
+                if (Double.TryParse(e.NewValues["MontantCharges"].ToString(), out mDouble))
+                {
+                    mResult.Bien.MontantCharges = mDouble;
+                    mList[row.DataItemIndex].MontantCharges = mDouble;
+                }
+                //Ville
+                mString = e.NewValues["Ville"].ToString();
+                mResult.Bien.Ville = mString;
+                mList[row.DataItemIndex].Ville = mString;
+                //CodePostal
+                mString = e.NewValues["CodePostal"].ToString();
+                mResult.Bien.CodePostal = mString;
+                mList[row.DataItemIndex].CodePostal = mString;
+                //TransactionEffectuee && //DateTransaction
+                mString = e.NewValues["TransactionEffectuee"].ToString();
+                if (mString == "True")
+                {
+                    
+                    mResult.Bien.TransactionEffectuee = true;
+                    mList[row.DataItemIndex].TransactionEffectuee = true;
+                    /*
+                    L'insertion auto de la date ne marche pas
+                    */
+                    DateTime localDate = DateTime.Now;
+                    mResult.Bien.DateTransaction = localDate;
+                    mList[row.DataItemIndex].DateTransaction = localDate;
+                }
+                else
+                {
+                    mResult.Bien.TransactionEffectuee = false;
+                    mList[row.DataItemIndex].TransactionEffectuee = false;
+                    mResult.Bien.DateTransaction = null;
+                    mList[row.DataItemIndex].DateTransaction = null;
+                }
+                
+
+
+
                 client.ModifierBienImmobilier(mResult.Bien);
             }
             //Update the values.

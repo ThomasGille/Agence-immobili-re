@@ -73,3 +73,18 @@ G:\PROJET ASP LATEST\Projet - Agence immobilière\ServiceWCF\bin\System.Data.SQL
 G:\PROJET ASP LATEST\Projet - Agence immobilière\ServiceWCF\obj\Debug\ServiceWCF.csprojResolveAssemblyReference.cache
 G:\PROJET ASP LATEST\Projet - Agence immobilière\ServiceWCF\obj\Debug\ServiceWCF.dll
 G:\PROJET ASP LATEST\Projet - Agence immobilière\ServiceWCF\obj\Debug\ServiceWCF.pdb
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\SQL\agence.db
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\ServiceWCF.dll.config
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\ServiceWCF.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\ServiceWCF.pdb
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\EntityFramework.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\EntityFramework.SqlServer.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.EF6.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.Linq.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\EntityFramework.xml
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\EntityFramework.SqlServer.xml
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.xml
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.dll
+C:\Users\Thomas\Source\Repos\Agence Immobilière\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.pdb
