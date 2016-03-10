@@ -42,8 +42,16 @@ namespace ClientWeb
                     string[] words = Request.QueryString["prix_demande"].TrimStart(',').Split(',');
                     if(words.Length == 2)
                     {
-                        prix1 = words[0];
-                        prix2 = words[1];
+                        if (Convert.ToInt32(words[0]) > Convert.ToInt32(words[1]))
+                        {
+                            prix1 = words[1];
+                            prix2 = words[0];
+                        }
+                        else
+                        {
+                            prix1 = words[0];
+                            prix2 = words[1];
+                        }
                     }
                 }
                 if (Request.QueryString["surface_demande"] != null)
@@ -51,8 +59,16 @@ namespace ClientWeb
                     string[] words = Request.QueryString["surface_demande"].TrimStart(',').Split(',');
                     if (words.Length == 2)
                     {
-                        surface1 = words[0];
-                        surface2 = words[1];
+                        if(Convert.ToInt32(words[0]) > Convert.ToInt32(words[1]))
+                        {
+                            surface1 = words[1];
+                            surface2 = words[0];
+                        }
+                        else
+                        {
+                            surface1 = words[0];
+                            surface2 = words[1];
+                        }
                     }
                 }
                 if (Request.QueryString["nombre_piece_demande"] != null)
@@ -71,7 +87,6 @@ namespace ClientWeb
                 criteres.DateMiseEnTransaction2 = (null != Request.QueryString["date_mise_transaction_2"] && "" != Request.QueryString["date_mise_transaction_2"] ? DateTime.Parse(Request.QueryString["date_mise_transaction_2"]) : (DateTime?)null);
                 criteres.DateTransaction1 = (null != Request.QueryString["date_transaction_1"] && "" != Request.QueryString["date_transaction_1"] ? DateTime.Parse(Request.QueryString["date_transaction_1"]) : (DateTime?)null);
                 criteres.DateTransaction2 = (null != Request.QueryString["date_transaction_2"] && "" != Request.QueryString["date_transaction_2"] ? DateTime.Parse(Request.QueryString["date_transaction_2"]) : (DateTime?)null);
-                criteres.EnergieChauffage = (null != Request.QueryString["energie_chauffage"] && "" != Request.QueryString["energie_chauffage"] ? (ServiceAgence.BienImmobilierBase.eEnergieChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eEnergieChauffage), Request.QueryString["energie_chauffage"]) : (ServiceAgence.BienImmobilierBase.eEnergieChauffage?)null);
                 criteres.MontantCharges1 = (null != Request.QueryString["montantcharges1"] && "" != Request.QueryString["montantcharges1"] ? int.Parse(Request.QueryString["montantcharges1"]) : -1);
                 criteres.MontantCharges2 = (null != Request.QueryString["montantcharges2"] && "" != Request.QueryString["montantcharges2"] ? int.Parse(Request.QueryString["montantcharges2"]) : -1);
 
@@ -95,14 +110,30 @@ namespace ClientWeb
                 String key = localiseKey("type_bien");
                 if(key != null)
                 {
+                    if (key != "-1")
                         criteres.TypeBien = (ServiceAgence.BienImmobilierBase.eTypeBien)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeBien), key);
+                    else
+                        criteres.EnergieChauffage = null;
+                }
+
+                criteres.TypeBien = null;
+                key = localiseKey("energie_chauffage");
+                if (key != null)
+                {
+                    if (key != "-1")
+                        criteres.EnergieChauffage = (ServiceAgence.BienImmobilierBase.eEnergieChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eEnergieChauffage), key);
+                    else
+                        criteres.EnergieChauffage = null;
                 }
 
                 criteres.TypeChauffage = null;
                 key = localiseKey("type_chauffage");
                 if (key != null)
-                { 
-                    criteres.TypeChauffage = (ServiceAgence.BienImmobilierBase.eTypeChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeChauffage), key);
+                {
+                    if (key != "-1")
+                        criteres.TypeChauffage = (ServiceAgence.BienImmobilierBase.eTypeChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeChauffage), key);
+                     else
+                        criteres.EnergieChauffage = null;
                 }
 
                 criteres.TypeTransaction = null;
@@ -110,7 +141,10 @@ namespace ClientWeb
                 System.Diagnostics.Debug.WriteLine(key);
                 if (key != null)
                 {
-                    criteres.TypeTransaction = (ServiceAgence.BienImmobilierBase.eTypeTransaction)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeTransaction), key);
+                    if (key != "-1")
+                        criteres.TypeTransaction = (ServiceAgence.BienImmobilierBase.eTypeTransaction)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeTransaction), key);
+                    else
+                        criteres.EnergieChauffage = null;
                 }
 
 

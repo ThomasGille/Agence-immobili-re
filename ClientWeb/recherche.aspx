@@ -14,6 +14,7 @@
             <asp:DropDownList id="type_transaction" name="type_transaction"
                     AutoPostBack="False"
                     runat="server">
+                <asp:ListItem Value="-1"> Indifferent </asp:ListItem>
                 <asp:ListItem Value="0"> Vente </asp:ListItem>
                 <asp:ListItem Value="1"> Location </asp:ListItem>
             </asp:DropDownList>
@@ -23,6 +24,7 @@
         <asp:DropDownList id="type_bien" name="type_bien"
                     AutoPostBack="False"
                     runat="server">
+                <asp:ListItem Value="-1"> Indifferent </asp:ListItem>
                 <asp:ListItem Value="0"> Appartement </asp:ListItem>
                 <asp:ListItem Value="1"> Garage </asp:ListItem>
                 <asp:ListItem Value="2"> Maison </asp:ListItem>
@@ -34,6 +36,7 @@
         <asp:DropDownList id="type_chauffage" name="type_chauffage"
                     AutoPostBack="False"
                     runat="server">
+                <asp:ListItem Value="-1"> Indifferent </asp:ListItem>
                 <asp:ListItem Value="0"> Aucun </asp:ListItem>
                 <asp:ListItem Value="1"> Individuel </asp:ListItem>
                 <asp:ListItem Value="2"> Collectif </asp:ListItem>
@@ -44,6 +47,7 @@
         <asp:DropDownList id="energie_chauffage" name="energie_chauffage"
                     AutoPostBack="False"
                     runat="server">
+                <asp:ListItem Value="-1"> Indifferent </asp:ListItem>
                 <asp:ListItem Value="0"> Aucun </asp:ListItem>
                 <asp:ListItem Value="1"> Fioul </asp:ListItem>
                 <asp:ListItem Value="2"> Gaz </asp:ListItem>
@@ -72,9 +76,9 @@
     <script>
           $('.range-slider-price').jRange({
           from: 0,
-          to: 100,
+          to: 1000000,
           step: 1,
-          scale: [0,25,50,75,100],
+          scale: [0, 250000, 500000, 750000, 1000000],
           format: '%s',
           width: 300,
           showLabels: true,
@@ -86,9 +90,9 @@
       <script>
           $('.range-slider-surface').jRange({
           from: 0,
-          to: 200,
+          to: 1000,
           step: 1,
-          scale: [0,200],
+          scale: [0,500,1000],
           format: '%s',
           width: 300,
           showLabels: true,
@@ -99,9 +103,9 @@
       <script>
           $('.range-slider-piece-number').jRange({
           from: 0,
-          to: 200,
+          to: 25,
           step: 1,
-          scale: [0,200],
+          scale: [0,5,10,15,20,25],
           format: '%s',
           width: 300,
           showLabels: true,
