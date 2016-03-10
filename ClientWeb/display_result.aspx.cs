@@ -113,7 +113,7 @@ namespace ClientWeb
                     if (key != "-1")
                         criteres.TypeBien = (ServiceAgence.BienImmobilierBase.eTypeBien)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeBien), key);
                     else
-                        criteres.EnergieChauffage = null;
+                        criteres.TypeBien = null;
                 }
 
                 criteres.TypeBien = null;
@@ -133,7 +133,7 @@ namespace ClientWeb
                     if (key != "-1")
                         criteres.TypeChauffage = (ServiceAgence.BienImmobilierBase.eTypeChauffage)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeChauffage), key);
                      else
-                        criteres.EnergieChauffage = null;
+                        criteres.TypeChauffage = null;
                 }
 
                 criteres.TypeTransaction = null;
@@ -144,7 +144,7 @@ namespace ClientWeb
                     if (key != "-1")
                         criteres.TypeTransaction = (ServiceAgence.BienImmobilierBase.eTypeTransaction)Enum.Parse(typeof(ServiceAgence.BienImmobilierBase.eTypeTransaction), key);
                     else
-                        criteres.EnergieChauffage = null;
+                        criteres.TypeTransaction = null;
                 }
 
 
