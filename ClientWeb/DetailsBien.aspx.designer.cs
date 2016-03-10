@@ -175,6 +175,33 @@ namespace ClientWeb {
         protected global::System.Web.UI.WebControls.Label Ville;
         
         /// <summary>
+        /// Contrôle BoxTextMail.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BoxTextMail;
+        
+        /// <summary>
+        /// Contrôle ButtonSend.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSend;
+        
+        /// <summary>
+        /// Contrôle TextErreurMail.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TextErreurMail;
+        
+        /// <summary>
         /// Contrôle rpResultats.
         /// </summary>
         /// <remarks>

@@ -30,7 +30,11 @@
         <asp:Label ID="TypeTransaction" runat="server" Text="Label"></asp:Label>
         <asp:Label ID="Ville" runat="server" Text="Label"></asp:Label>
 
-
+        
+    <h3>Contacter le vendeur</h3>
+    <b>Message pour le vendeur : </b>&nbsp;<asp:TextBox ID="BoxTextMail" runat="server" Height="58px" Width="207px"></asp:TextBox> <br />
+    <asp:Button ID="ButtonSend" runat="server" Text="Send" OnClick="ButtonSendClick"/>
+    <asp:Label ID="TextErreurMail" runat="server" Text=""></asp:Label>
     
         <!-- Slide gallery -->
         <div class="jumbotron">

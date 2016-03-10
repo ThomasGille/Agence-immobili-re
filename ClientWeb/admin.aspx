@@ -13,8 +13,7 @@
           OnRowCancelingEdit="TaskGridView_RowCancelingEdit" 
           OnRowUpdating="TaskGridView_RowUpdating" 
           OnRowDeleting="TaskGridView_RowDeleting"
-          AllowSorting="true"
-          OnSorting="gvResultats_Sorting"
+          
           
            > 
 
