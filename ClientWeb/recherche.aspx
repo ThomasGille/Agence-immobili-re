@@ -71,6 +71,7 @@
 
 
         <asp:Button ID="button_valider" runat="server" OnClick="button_valider_Click" Text="Valider"/>
+        <asp:Button ID="button_admin" runat="server" OnClick="button_valider_Admin" Text="toAdmin"/>
         </div>
 
     <script>

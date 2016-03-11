@@ -31,5 +31,23 @@ namespace ClientWeb
             }
             Response.Redirect(query);*/
         }
+
+        protected void button_valider_Admin(object sender, EventArgs e)
+        {
+            int a = 456;
+            Response.Redirect("admin.aspx?type_chauffage=" + Request["ctl00$ContentPlaceHolder1$type_chauffage"]
+                + "&type_transaction=" + Request["ctl00$ContentPlaceHolder1$type_transaction"]
+                + "&type_bien=" + Request["ctl00$ContentPlaceHolder1$type_bien"]
+                + "&energie_chauffage=" + Request["ctl00$ContentPlaceHolder1$energie_chauffage"]
+                + "&prix_demande=" + Request["prix_demande"]
+                + "&surface_demande=" + Request["surface_demande"]
+                + "&nombre_piece_demande=" + Request["nombre_piece_demande"]);
+            /*string query = "display_result.aspx?";
+            foreach(String key in Request.QueryString.AllKeys)
+            {
+                
+            }
+            Response.Redirect(query);*/
+        }
     }
 }

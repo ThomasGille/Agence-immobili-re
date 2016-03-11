@@ -13,9 +13,7 @@
           OnRowCancelingEdit="TaskGridView_RowCancelingEdit" 
           OnRowUpdating="TaskGridView_RowUpdating" 
           OnRowDeleting="TaskGridView_RowDeleting"
-          
-          
-           > 
+          > 
 
 
         <Columns>
@@ -31,13 +29,10 @@
             <asp:BoundField DataField="DateMiseEnTransaction" HeaderText="DateMiseEnTransaction" />
             <asp:BoundField DataField="DateTransaction" HeaderText="DateTransaction" SortExpression="DateTransaction" />
 
-            
-            
-            
 
             
         </Columns>
     </asp:GridView>
 
-    
+
 </asp:Content>
