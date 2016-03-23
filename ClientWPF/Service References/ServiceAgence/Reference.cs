@@ -89,7 +89,7 @@ namespace ClientWPF.ServiceAgence {
         private System.Nullable<bool> TransactionEffectueeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<ClientWPF.ServiceAgence.CriteresRechercheBiensImmobiliers.Tri> TrisField;
+        private System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.CriteresRechercheBiensImmobiliers.Tri> TrisField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<ClientWPF.ServiceAgence.BienImmobilierBase.eTypeBien> TypeBienField;
@@ -400,7 +400,7 @@ namespace ClientWPF.ServiceAgence {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Collections.Generic.List<ClientWPF.ServiceAgence.CriteresRechercheBiensImmobiliers.Tri> Tris {
+        public System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.CriteresRechercheBiensImmobiliers.Tri> Tris {
             get {
                 return this.TrisField;
             }
@@ -904,10 +904,10 @@ namespace ClientWPF.ServiceAgence {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursBloquantesField;
+        private System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursBloquantesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursNonBloquantesField;
+        private System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursNonBloquantesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool SuccesExecutionField;
@@ -923,7 +923,7 @@ namespace ClientWPF.ServiceAgence {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Collections.Generic.List<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursBloquantes {
+        public System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursBloquantes {
             get {
                 return this.ErreursBloquantesField;
             }
@@ -936,7 +936,7 @@ namespace ClientWPF.ServiceAgence {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Collections.Generic.List<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursNonBloquantes {
+        public System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.ResultatOperation.Erreur> ErreursNonBloquantes {
             get {
                 return this.ErreursNonBloquantesField;
             }
@@ -1121,7 +1121,7 @@ namespace ClientWPF.ServiceAgence {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<ClientWPF.ServiceAgence.BienImmobilierBase> ListField;
+        private System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.BienImmobilierBase> ListField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int PageField;
@@ -1152,7 +1152,7 @@ namespace ClientWPF.ServiceAgence {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Collections.Generic.List<ClientWPF.ServiceAgence.BienImmobilierBase> List {
+        public System.Collections.ObjectModel.ObservableCollection<ClientWPF.ServiceAgence.BienImmobilierBase> List {
             get {
                 return this.ListField;
             }
@@ -1277,7 +1277,7 @@ namespace ClientWPF.ServiceAgence {
         private int NumEtageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<string> PhotosBase64Field;
+        private System.Collections.ObjectModel.ObservableCollection<string> PhotosBase64Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double SurfaceField;
@@ -1364,7 +1364,7 @@ namespace ClientWPF.ServiceAgence {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Collections.Generic.List<string> PhotosBase64 {
+        public System.Collections.ObjectModel.ObservableCollection<string> PhotosBase64 {
             get {
                 return this.PhotosBase64Field;
             }
