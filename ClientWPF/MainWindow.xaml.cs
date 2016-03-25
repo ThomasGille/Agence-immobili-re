@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
-using System.IO;
 
 namespace ClientWPF
 {
@@ -51,49 +50,48 @@ namespace ClientWPF
             get { return _Bien; }
         }
 
-        public ObservableCollection<Image> listeImgMini;
-
         public MainWindow()
         {
             this.liste = null;
             this.Bien = null;
-            this.listeImgMini = null;
-            this.get_all();
+            this.new_research(MainWindow.initNullCriteres());
             this.DataContext = this;
             InitializeComponent();
             
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public static ServiceAgence.CriteresRechercheBiensImmobiliers initNullCriteres()
+        {
+            ServiceAgence.CriteresRechercheBiensImmobiliers criteres = new ServiceAgence.CriteresRechercheBiensImmobiliers();
+            criteres.DateMiseEnTransaction1 = null;
+            criteres.DateMiseEnTransaction2 = null;
+            criteres.DateTransaction1 = null;
+            criteres.DateTransaction2 = null;
+            criteres.EnergieChauffage = null;
+            criteres.MontantCharges1 = -1;
+            criteres.MontantCharges2 = -1;
+            criteres.NbEtages1 = -1;
+            criteres.NbEtages2 = -1;
+            criteres.NbPieces1 = -1;
+            criteres.NbPieces2 = -1;
+            criteres.NumEtage1 = -1;
+            criteres.NumEtage2 = -1;
+            criteres.Prix1 = -1;
+            criteres.Prix2 = -1;
+            criteres.Surface1 = -1;
+            criteres.Surface2 = -1;
+            criteres.TransactionEffectuee = null;
+            criteres.TypeBien = null;
+            criteres.TypeChauffage = null;
+            criteres.TypeTransaction = null;
+            return criteres;
+        }
 
-        public void get_all()
+        void new_research(ServiceAgence.CriteresRechercheBiensImmobiliers criteres)
         {
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {
-                ServiceAgence.CriteresRechercheBiensImmobiliers criteres = new ServiceAgence.CriteresRechercheBiensImmobiliers();
-                criteres.DateMiseEnTransaction1 = null;
-                criteres.DateMiseEnTransaction2 = null;
-                criteres.DateTransaction1 = null;
-                criteres.DateTransaction2 = null;
-                criteres.EnergieChauffage = null;
-                criteres.MontantCharges1 = -1;
-                criteres.MontantCharges2 = -1;
-                criteres.NbEtages1 = -1;
-                criteres.NbEtages2 = -1;
-                criteres.NbPieces1 = -1;
-                criteres.NbPieces2 = -1;
-                criteres.NumEtage1 = -1;
-                criteres.NumEtage2 = -1;
-                criteres.Prix1 = -1;
-                criteres.Prix2 = -1;
-                criteres.Surface1 = -1;
-                criteres.Surface2 = -1;
-                criteres.TransactionEffectuee = null;
-                criteres.TypeBien = null;
-                criteres.TypeChauffage = null;
-                criteres.TypeTransaction = null;
                 ServiceAgence.ResultatListeBiensImmobiliers resultat = client.LireListeBiensImmobiliers(criteres, null, null);
-
 
                 if (resultat.SuccesExecution)
                 {
@@ -102,40 +100,30 @@ namespace ClientWPF
                 else
                 {
                     liste = new ObservableCollection<ServiceAgence.BienImmobilierBase>();
-                    foreach(ServiceAgence.BienImmobilierBase Item in liste)
-                    {
-                        if (Item.PhotoPrincipaleBase64 != null){
-                            byte[] binaryData = Convert.FromBase64String(Item.PhotoPrincipaleBase64);
-
-                            BitmapImage bi = new BitmapImage();
-                            bi.BeginInit();
-                            bi.StreamSource = new MemoryStream(binaryData);
-                            bi.EndInit();
-
-                            Image img = new Image();
-                            img.Source = bi;
-                            listeImgMini.Add(img);
-                        }
-                        else
-                        {
-                            // TODO: Put the unfound image
-                            listeImgMini.Add(null);
-                        }
-                    }
                 }
             }
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //faire une recherche pour récup le bien complet
             // TODO : 
-            using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
-            {
-                int mId =((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
-                ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId.ToString());
-                this.Bien = resultat.Bien;
-            }
+           /* ((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
+            ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId);*/
+        }
+
+        private void MenuClickRechercheSimple(object sender, RoutedEventArgs e)
+        {
+            RechercheSimple windows = new RechercheSimple(this);
+            windows.ShowDialog();
+            //this.Close();
+        }
+
+        private void MenuClickRechercheAvancee(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
