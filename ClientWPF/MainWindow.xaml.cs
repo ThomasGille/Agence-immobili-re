@@ -108,16 +108,18 @@ namespace ClientWPF
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //faire une recherche pour récup le bien complet
-            // TODO : 
-           /* ((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
-            ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId);*/
+            using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
+            {
+                int mId = ((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
+                ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId.ToString());
+                this.Bien = resultat.Bien;
+            }
         }
 
         private void MenuClickRechercheSimple(object sender, RoutedEventArgs e)
         {
-            RechercheSimple windows = new RechercheSimple(this);
-            windows.ShowDialog();
+            //RechercheSimple windows = new RechercheSimple(this);
+            //windows.ShowDialog();
             //this.Close();
         }
 
@@ -125,5 +127,28 @@ namespace ClientWPF
         {
 
         }
+
+        /*
+        foreach(ServiceAgence.BienImmobilierBase Item in liste)
+                    {
+                        if (Item.PhotoPrincipaleBase64 != null){
+                            byte[] binaryData = Convert.FromBase64String(Item.PhotoPrincipaleBase64);
+
+                            BitmapImage bi = new BitmapImage();
+                            bi.BeginInit();
+                            bi.StreamSource = new MemoryStream(binaryData);
+                            bi.EndInit();
+
+                            Image img = new Image();
+                            img.Source = bi;
+                            listeImgMini.Add(img);
+                        }
+                        else
+                        {
+                            // TODO: Put the unfound image
+                            listeImgMini.Add(null);
+                        }
+                    }
+         */
     }
 }
