@@ -120,6 +120,26 @@ namespace ClientWPF
             }
         }
 
+        private void Supression_click(object sender, RoutedEventArgs e)
+        {
+            if (((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem) == null)
+            {
+                this.Bien = null;
+                return;
+            }
+            int mId = ((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
+
+            using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
+            {
+               
+                client.SupprimerBienImmobilier(mId.ToString());
+                int selected_index = mListBox.SelectedIndex;
+                if (selected_index != -1)
+                    liste.RemoveAt(selected_index);
+            }
+
+        }
+
         private void MenuClickRechercheSimple(object sender, RoutedEventArgs e)
         {
             RechercheSimple windows = new RechercheSimple(this);
