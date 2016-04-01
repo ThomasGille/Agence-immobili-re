@@ -36,9 +36,23 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Menu HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" >
+            <MenuItem Header="Recherche">
+                <MenuItem Header="Simple" HorizontalAlignment="Left" Width="140" Click="MenuClickRechercheSimple"
+			  />
+                <MenuItem Header="Avancée" HorizontalAlignment="Left" Width="140" Click="MenuClickRechercheAvancee"
+			  />
+            </MenuItem>
+        </Menu>
+
         <!-- Affiche les miniatures dans la colonne de gauche -->
-        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Row="1" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -88,7 +102,7 @@
         <!-- Affiche les détails dans le block de droite -->
 
 
-        <ScrollViewer Grid.Column="2">
+        <ScrollViewer Grid.Column="2" Grid.Row="1">
             <StackPanel Orientation="Vertical" Grid.Column="2" DataContext="{Binding Bien}">
 
                 <StackPanel Orientation="Horizontal">
