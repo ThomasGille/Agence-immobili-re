@@ -87,7 +87,7 @@ namespace ClientWPF
             return criteres;
         }
 
-        void new_research(ServiceAgence.CriteresRechercheBiensImmobiliers criteres)
+        public void new_research(ServiceAgence.CriteresRechercheBiensImmobiliers criteres)
         {
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {

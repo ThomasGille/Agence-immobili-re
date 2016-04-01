@@ -1,0 +1,40 @@
+﻿<Window x:Class="ClientWPF.RechercheSimple"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
+        Title="RechercheSimple" Height="229" Width="153"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+
+        <ObjectDataProvider x:Key="TransactionTypesProvider"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension TypeName="s:BienImmobilierBase+eTypeTransaction" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+
+
+    </Window.Resources>
+
+
+    <Grid Margin="0,0,2,-2">
+
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="12,18,0,0" TextWrapping="Wrap" Text="Type de transaction" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="64,95,0,0" TextWrapping="Wrap" Text="Ville" VerticalAlignment="Top"/>
+
+        <ListBox x:Name="types_transaction" Margin="0,40,0,112" ItemsSource="{Binding Source={StaticResource TransactionTypesProvider}}">
+        </ListBox>
+
+        <TextBox x:Name="textbox_town" HorizontalAlignment="Left" Height="23" Margin="12,116,0,0" TextWrapping="Wrap" Text="{Binding Path=town, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Valider" HorizontalAlignment="Left" Margin="38,162,0,0" VerticalAlignment="Top" Width="75" Click="submit_form"/>
+
+    </Grid>
+</Window>
