@@ -110,6 +110,10 @@ namespace ClientWPF
         {
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {
+                if (((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem)==null) {
+                    this.Bien = null;
+                    return;
+                }
                 int mId = ((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem).Id;
                 ServiceAgence.ResultatBienImmobilier resultat = client.LireDetailsBienImmobilier(mId.ToString());
                 this.Bien = resultat.Bien;
@@ -118,9 +122,9 @@ namespace ClientWPF
 
         private void MenuClickRechercheSimple(object sender, RoutedEventArgs e)
         {
-            //RechercheSimple windows = new RechercheSimple(this);
-            //windows.ShowDialog();
-            //this.Close();
+            RechercheSimple windows = new RechercheSimple(this);
+            windows.ShowDialog();
+            ///this.Close();
         }
 
         private void MenuClickRechercheAvancee(object sender, RoutedEventArgs e)

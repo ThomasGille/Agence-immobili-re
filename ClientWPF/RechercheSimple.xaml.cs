@@ -76,7 +76,7 @@ namespace ClientWPF
             String town = this.textbox_town.Text;
             criteres.Ville = town;
 
-            //this.parent_windows.new_research(criteres);
+            this.parent_windows.new_research(criteres);
             this.Close();
         } 
     }

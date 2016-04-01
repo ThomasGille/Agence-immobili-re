@@ -97,7 +97,7 @@
             </ItemsControl.ItemTemplate>
         </ListBox>
 
-        <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+        <GridSplitter Grid.Row="1" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
         
         <!-- Affiche les détails dans le block de droite -->
 
