@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\StringToBmp.cs" />
     <Compile Include="Service References\ServiceAgence\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

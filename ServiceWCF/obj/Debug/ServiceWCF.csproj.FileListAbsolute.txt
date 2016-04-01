@@ -100,6 +100,5 @@ C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\System.Data.S
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\EntityFramework.xml
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\EntityFramework.SqlServer.xml
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.xml
-C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.csprojResolveAssemblyReference.cache
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.dll
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.pdb

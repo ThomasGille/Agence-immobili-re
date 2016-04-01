@@ -8,12 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/chevron-left.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/chevron-right.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/filter.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/minus.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/pencil.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/plus.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/refresh.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("converters/photo_not_available.jpg")]
 
 
