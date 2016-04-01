@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        Title="AjoutBien" Height="500" Width="800">
+        Title="AjoutBien" Height="830.012" Width="800">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
@@ -71,27 +71,28 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" />
-                    <ListBox x:Name="types_transaction" Margin="12,39,460,97" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}"/>
+                    <ComboBox x:Name="type_transaction" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}"/>
+                    
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxTypeBien"/>
+                    <ComboBox x:Name="type_biens" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxAdresse"/>
+                    <TextBox x:Name="BoxAdresse" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxVille"/>
+                    <TextBox x:Name="BoxVille" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="CodePostal :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxCodePostal"/>
+                    <TextBox x:Name="BoxCodePostal" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -100,42 +101,42 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Prix :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxPrix"/>
+                    <TextBox x:Name="BoxPrix" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="MontantCharges :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxMontantCharges"/>
+                    <TextBox x:Name="BoxMontantCharges" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbEtagess"/>
+                    <TextBox x:Name="BoxNbEtagess" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbPieces"/>
+                    <TextBox x:Name="BoxNbPieces" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="NumEtage :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNumEtage"/>
+                    <TextBox x:Name="BoxNumEtage" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxSurface"/>
+                    <TextBox x:Name="BoxSurface" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxEnergieChauffage"/>
+                    <ComboBox x:Name="energies_chauffage" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxTypeChauffage"/>
+                    <ComboBox x:Name="types_chauffages" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -145,17 +146,17 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="DateMiseEnTransaction :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDateMiseEnTransaction"/>
+                    <TextBox x:Name="BoxDateMiseEnTransaction" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TransactionEffectuee :" Style="{StaticResource Detail}" />
-                    <CheckBox x:Name="BoxTransactionEffectuee"/>
+                    <CheckBox x:Name="BoxTransactionEffectuee" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="DateTransaction :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDateTransaction"/>
+                    <TextBox x:Name="BoxDateTransaction" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -164,7 +165,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Description :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDescription" Height="48" Width="180"/>
+                    <TextBox x:Name="BoxDescription" Height="50" Width="180"/>
                 </StackPanel>
 
 

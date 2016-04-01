@@ -23,5 +23,7 @@ namespace ClientWPF
         {
             InitializeComponent();
         }
+
+       
     }
 }
