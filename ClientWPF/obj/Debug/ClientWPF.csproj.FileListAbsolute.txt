@@ -67,3 +67,7 @@ C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\ClientWP
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\ClientWPF.csprojResolveAssemblyReference.cache
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheSimple.g.cs
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheSimple.baml
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\AjoutBien.g.cs
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\AjoutBien.baml
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheAvancee.g.cs
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheAvancee.baml

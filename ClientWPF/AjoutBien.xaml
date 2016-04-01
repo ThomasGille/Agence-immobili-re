@@ -1,0 +1,179 @@
+﻿<Window x:Class="ClientWPF.AjoutBien"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="AjoutBien" Height="500" Width="800">
+    <Window.Resources>
+        <Style x:Key="Detail" TargetType="TextBlock">
+            <Setter Property="TextTrimming" Value="None" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,0,5,0" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="Foreground" Value="Blue"/>
+        </Style>
+
+        <ObjectDataProvider x:Key="TransactionTypesProviderTypeTransaction"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension TypeName="s:BienImmobilierBase+eTypeTransaction" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+
+        <ObjectDataProvider x:Key="TransactionTypesProviderEnergieChauffage"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension TypeName="s:BienImmobilierBase+eEnergieChauffage" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+
+        <ObjectDataProvider x:Key="TransactionTypesProviderTypeChauffage"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension TypeName="s:BienImmobilierBase+eTypeChauffage" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+
+        <ObjectDataProvider x:Key="TransactionTypesProviderTypeBien"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension TypeName="s:BienImmobilierBase+eTypeBien" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+
+    </Window.Resources>
+    
+    
+    <Grid>
+        <ScrollViewer >
+            <StackPanel Orientation="Vertical"  >
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Titre :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxName" Width="400"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" />
+                    <ListBox x:Name="types_transaction" Margin="12,39,460,97" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxTypeBien"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxAdresse"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxVille"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="CodePostal :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxCodePostal"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Prix :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxPrix"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="MontantCharges :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxMontantCharges"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxNbEtagess"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxNbPieces"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="NumEtage :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxNumEtage"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxSurface"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxEnergieChauffage"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxTypeChauffage"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="DateMiseEnTransaction :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxDateMiseEnTransaction"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="TransactionEffectuee :" Style="{StaticResource Detail}" />
+                    <CheckBox x:Name="BoxTransactionEffectuee"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="DateTransaction :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxDateTransaction"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Description :" Style="{StaticResource Detail}" />
+                    <TextBox x:Name="BoxDescription" Height="48" Width="180"/>
+                </StackPanel>
+
+
+
+
+                <!-- TODO : ajouter l'ajout d'images -->
+
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</Window>

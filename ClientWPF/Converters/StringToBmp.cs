@@ -34,10 +34,6 @@ namespace ClientWPF.Converters
             bi.Freeze();
 
             return bi;
-            
-            
-                // TODO: Put the unfound image
-                // changer img en base 64 et put in converter
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

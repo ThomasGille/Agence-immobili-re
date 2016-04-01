@@ -124,12 +124,18 @@ namespace ClientWPF
         {
             RechercheSimple windows = new RechercheSimple(this);
             windows.ShowDialog();
-            ///this.Close();
         }
 
         private void MenuClickRechercheAvancee(object sender, RoutedEventArgs e)
         {
+            RechercheAvancee windows = new RechercheAvancee(this);
+            windows.ShowDialog();
+        }
 
+        private void MenuAjout_Click(object sender, RoutedEventArgs e)
+        {
+            AjoutBien windows = new AjoutBien();
+            windows.ShowDialog();
         }
 
         /*
