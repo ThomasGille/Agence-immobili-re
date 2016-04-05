@@ -21,17 +21,16 @@ namespace ClientWPF
     /// <summary>
     /// Logique d'interaction pour AjoutBien.xaml
     /// </summary>
-    public partial class AjoutBien : Window
+    public partial class AjoutBien : Window , INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
         System.Collections.ArrayList mesImages = new System.Collections.ArrayList() ;
-        public String _calculatorOutput;
 
         public AjoutBien()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         private void btnUpload_Click(object sender, RoutedEventArgs e)
         {
@@ -41,16 +40,17 @@ namespace ClientWPF
               "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
               "Portable Network Graphic (*.png)|*.png";
             if (op.ShowDialog() == true)
-            {
+            {   
+                // Convertis une Bitmapimage en StringBase64
                 BitmapImage bitmapImage = new BitmapImage(new Uri(op.FileName));
                 MemoryStream ms = new MemoryStream();
                 PngBitmapEncoder encoder = new PngBitmapEncoder();
                 encoder.Frames.Add(BitmapFrame.Create(bitmapImage));
                 encoder.Save(ms);
                 byte[] bitmapdata = ms.ToArray();
-
-                String mS= Convert.ToBase64String(bitmapdata);
-                mesImages.Add(mS);
+                
+                mesImages.Add(Convert.ToBase64String(bitmapdata));
+                nbSelected.Content = mesImages.Count.ToString() + " selected";
             }
         }
 

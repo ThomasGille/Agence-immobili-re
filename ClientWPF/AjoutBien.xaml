@@ -173,6 +173,7 @@
                 <!-- TODO : ajouter l'ajout d'images -->
                 <Button x:Name="btnUpload" Width="109" Height="20" HorizontalAlignment="Left" Click="btnUpload_Click" Content="Ajouter une image" />
                 <!--                                 -->
+                <Label x:Name="nbSelected" Content="0 selected"/>
                 
                 <Button x:Name="btnValider" Width="120" Click="btnValider_Click"  >
                     <TextBlock><Bold>Valider</Bold></TextBlock>
