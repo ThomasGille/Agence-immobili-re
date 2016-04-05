@@ -23,6 +23,7 @@ namespace ClientWPF
     /// </summary>
     public partial class MainWindow : Window , INotifyPropertyChanged
     {
+        ServiceAgence.CriteresRechercheBiensImmobiliers  _lastCritere;
 
         private ObservableCollection<ServiceAgence.BienImmobilierBase> _liste;
         public ObservableCollection<ServiceAgence.BienImmobilierBase> liste 
@@ -102,6 +103,7 @@ namespace ClientWPF
                     liste = new ObservableCollection<ServiceAgence.BienImmobilierBase>();
                 }
             }
+            this._lastCritere = criteres;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -154,31 +156,14 @@ namespace ClientWPF
 
         private void MenuAjout_Click(object sender, RoutedEventArgs e)
         {
-            AjoutBien windows = new AjoutBien();
+            AjoutBien windows = new AjoutBien(liste);
             windows.ShowDialog();
+            refresh();
         }
 
-        /*
-        foreach(ServiceAgence.BienImmobilierBase Item in liste)
-                    {
-                        if (Item.PhotoPrincipaleBase64 != null){
-                            byte[] binaryData = Convert.FromBase64String(Item.PhotoPrincipaleBase64);
-
-                            BitmapImage bi = new BitmapImage();
-                            bi.BeginInit();
-                            bi.StreamSource = new MemoryStream(binaryData);
-                            bi.EndInit();
-
-                            Image img = new Image();
-                            img.Source = bi;
-                            listeImgMini.Add(img);
-                        }
-                        else
-                        {
-                            // TODO: Put the unfound image
-                            listeImgMini.Add(null);
-                        }
-                    }
-         */
+        public void refresh()
+        {
+            new_research(_lastCritere);
+        }
     }
 }

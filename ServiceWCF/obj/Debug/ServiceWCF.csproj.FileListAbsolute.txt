@@ -102,3 +102,4 @@ C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\EntityFramewo
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\bin\System.Data.SQLite.xml
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.dll
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.pdb
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ServiceWCF\obj\Debug\ServiceWCF.csprojResolveAssemblyReference.cache

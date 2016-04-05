@@ -38,7 +38,20 @@ namespace ClientWPF.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            /*
+            using (MemoryStream ms = new MemoryStream())
+            {
+                WriteableBitmap btmMap = new WriteableBitmap
+                    (((BitmapImage)value).PixelWidth, ((BitmapImage)value).PixelHeight);
+
+                // write an image into the stream
+                Extensions.SaveJpeg(btmMap, ms,
+                    bitmapImage.PixelWidth, bitmapImage.PixelHeight, 0, 100);
+                // TODO : debug
+                return ms.ToArray();
+            }
+            */
+            return null;
         }
     }
 }

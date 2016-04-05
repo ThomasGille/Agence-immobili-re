@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        Title="AjoutBien" Height="830.012" Width="800">
+        Title="AjoutBien" Height="558.662" Width="800">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
@@ -54,15 +54,15 @@
         </ObjectDataProvider>
 
     </Window.Resources>
-    
-    
+
+
     <Grid>
         <ScrollViewer >
             <StackPanel Orientation="Vertical"  >
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Titre :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxName" Width="400"/>
+                    <TextBox x:Name="BoxTitre" Width="400"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -72,12 +72,12 @@
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" />
                     <ComboBox x:Name="type_transaction" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}"/>
-                    
+
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="type_biens" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" />
+                    <ComboBox x:Name="type_bien" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -111,12 +111,12 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbEtagess" Width="150"/>
+                    <TextBox x:Name="BoxNbEtage" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbPieces" Width="150"/>
+                    <TextBox x:Name="BoxNbPiece" Width="150"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -131,12 +131,12 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="energies_chauffage" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" />
+                    <ComboBox x:Name="type_energies_chauffage" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="types_chauffages" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" />
+                    <ComboBox x:Name="type_chauffages" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
@@ -165,14 +165,18 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Description :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDescription" Height="50" Width="180"/>
+                    <TextBox x:Name="BoxDescription" Height="100" Width="320"/>
                 </StackPanel>
 
 
 
-
                 <!-- TODO : ajouter l'ajout d'images -->
+                <Button x:Name="btnUpload" Width="109" Height="20" HorizontalAlignment="Left" Click="btnUpload_Click" Content="Ajouter une image" />
+                <!--                                 -->
 
+                <Button x:Name="btnValider" Width="120" Click="btnValider_Click"  >
+                    <TextBlock><Bold>Valider</Bold></TextBlock>
+                </Button>
             </StackPanel>
 
         </ScrollViewer>
