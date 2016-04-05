@@ -156,7 +156,7 @@ namespace ClientWPF
 
         private void MenuAjout_Click(object sender, RoutedEventArgs e)
         {
-            AjoutBien windows = new AjoutBien(liste);
+            AjoutBien windows = new AjoutBien();
             windows.ShowDialog();
             refresh();
         }
@@ -164,6 +164,19 @@ namespace ClientWPF
         public void refresh()
         {
             new_research(_lastCritere);
+        }
+
+        private void EditionBien_click(object sender, RoutedEventArgs e)
+        {
+            if (((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem) == null)
+            {
+                this.Bien = null;
+                return;
+            }
+
+            EditerBien window = new EditerBien(this.Bien);
+            window.ShowDialog();
+            refresh();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,12 +24,14 @@ namespace ClientWPF
     public partial class AjoutBien : Window
     {
         System.Collections.ArrayList mesImages = new System.Collections.ArrayList() ;
-        ObservableCollection<ServiceAgence.BienImmobilierBase> _liste;
-        public AjoutBien(ObservableCollection<ServiceAgence.BienImmobilierBase> _liste)
+        public String _calculatorOutput;
+
+        public AjoutBien()
         {
             InitializeComponent();
-            this._liste = _liste;
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void btnUpload_Click(object sender, RoutedEventArgs e)
         {

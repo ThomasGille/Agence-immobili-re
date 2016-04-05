@@ -71,3 +71,5 @@ C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\AjoutBie
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\AjoutBien.baml
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheAvancee.g.cs
 C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\RechercheAvancee.baml
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\EditerBien.g.cs
+C:\Users\Thomas\Documents\GitHub\Agence-immobili-re\ClientWPF\obj\Debug\EditerBien.baml

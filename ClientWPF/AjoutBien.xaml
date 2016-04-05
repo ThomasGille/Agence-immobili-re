@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        Title="AjoutBien" Height="558.662" Width="800">
+        Title="AjoutBien" Height="578.395" Width="800">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
@@ -173,10 +173,11 @@
                 <!-- TODO : ajouter l'ajout d'images -->
                 <Button x:Name="btnUpload" Width="109" Height="20" HorizontalAlignment="Left" Click="btnUpload_Click" Content="Ajouter une image" />
                 <!--                                 -->
-
+                
                 <Button x:Name="btnValider" Width="120" Click="btnValider_Click"  >
                     <TextBlock><Bold>Valider</Bold></TextBlock>
                 </Button>
+                
             </StackPanel>
 
         </ScrollViewer>

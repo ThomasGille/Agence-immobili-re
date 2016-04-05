@@ -61,6 +61,9 @@
       <DependentUpon>AjoutBien.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\StringToBmp.cs" />
+    <Compile Include="EditerBien.xaml.cs">
+      <DependentUpon>EditerBien.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RechercheAvancee.xaml.cs">
       <DependentUpon>RechercheAvancee.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,10 @@
     <Page Include="AjoutBien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditerBien.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
