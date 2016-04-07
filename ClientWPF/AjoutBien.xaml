@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        Title="AjoutBien" Height="600" Width="800">
+        Title="AjoutBien" Height="600" Width="300">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
@@ -55,132 +55,227 @@
 
     </Window.Resources>
 
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
 
-    <Grid>
-        <ScrollViewer >
-            <StackPanel Orientation="Vertical"  >
 
-                <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical"  Grid.Column="0">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="Titre :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxTitre" Width="400"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0">
                     <TextBlock Text="" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Height="22.4">
                     <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="type_transaction" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}"/>
-
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="22.4">
                     <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="type_bien" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxAdresse" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxVille" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="CodePostal :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxCodePostal" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0">
                     <TextBlock Text="" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="Prix :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxPrix" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="MontantCharges :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxMontantCharges" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbEtage" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNbPiece" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="NumEtage :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxNumEtage" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxSurface" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="22.4">
                     <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="type_energies_chauffage" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="22.4">
                     <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" />
-                    <ComboBox x:Name="type_chauffages" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0">
                     <TextBlock Text="" />
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="DateMiseEnTransaction :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDateMiseEnTransaction" Width="150"/>
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="15.2">
                     <TextBlock Text="TransactionEffectuee :" Style="{StaticResource Detail}" />
-                    <CheckBox x:Name="BoxTransactionEffectuee" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="17.6">
                     <TextBlock Text="DateTransaction :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDateTransaction" Width="150"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0">
                     <TextBlock Text="" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Height="40">
                     <TextBlock Text="Description :" Style="{StaticResource Detail}" />
-                    <TextBox x:Name="BoxDescription" Height="100" Width="320"/>
                 </StackPanel>
+
 
 
 
                 <!-- TODO : ajouter l'ajout d'images -->
-                <Button x:Name="btnUpload" Width="109" Height="20" HorizontalAlignment="Left" Click="btnUpload_Click" Content="Ajouter une image" />
+                <Button x:Name="btnUpload" Width="109" Height="20" HorizontalAlignment="Left" Click="btnUpload_Click" Content="Ajouter une image" Grid.Column="0"/>
                 <!--                                 -->
-                <Label x:Name="nbSelected" Content="0 selected"/>
-                
-                <Button x:Name="btnValider" Width="120" Click="btnValider_Click"  >
-                    <TextBlock><Bold>Valider</Bold></TextBlock>
-                </Button>
-                
+                <Label x:Name="nbSelected" Content="0 selected" Grid.Column="0"/>
+
+
             </StackPanel>
 
-        </ScrollViewer>
-    </Grid>
+
+            <StackPanel Orientation="Vertical"  Grid.Column="1" Margin="0.2,0,149.8,0.4">
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxTitre" Width="147" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <ComboBox x:Name="type_transaction" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <ComboBox x:Name="type_bien" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxAdresse" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxVille" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxCodePostal" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="0,0,173,0">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxPrix" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxMontantCharges" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxNbEtage" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxNbPiece" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxNumEtage" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxSurface" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <ComboBox x:Name="type_energies_chauffage" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <ComboBox x:Name="type_chauffages" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <CheckBox x:Name="BoxTransactionEffectuee" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxDateTransaction" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBlock Text="" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBox x:Name="BoxDescription" Height="100" Width="151"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBlock Text="" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <TextBlock Text="" />
+                </StackPanel>
+                <Button x:Name="btnValider" Click="btnValider_Click" Margin="0,0,93,0"  >
+                    <TextBlock><Bold><Run Text="Valider"/></Bold></TextBlock>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+    </ScrollViewer>
 </Window>
