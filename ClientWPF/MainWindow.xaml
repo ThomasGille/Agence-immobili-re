@@ -29,9 +29,9 @@
     </Window.Resources>
 
 
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="5" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
@@ -63,7 +63,7 @@
         </Menu>
 
         <!-- Affiche les miniatures dans la colonne de gauche -->
-        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Row="1" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Row="1" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged" Background="Black">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -115,135 +115,218 @@
         <ScrollViewer Grid.Column="2" Grid.Row="1">
             <StackPanel Orientation="Vertical" Grid.Column="2" DataContext="{Binding Bien}">
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Titre :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding Titre}" />
-                </StackPanel>
+                <Grid>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="" />
-                </StackPanel>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding TypeTransaction}" />
-                </StackPanel>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding TypeBien}" />
-                </StackPanel>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding Adresse}" />
-                </StackPanel>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding Ville}" />
-                </StackPanel>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="CodePostal :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding CodePostal}" />
-                </StackPanel>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="" />
-                </StackPanel>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Prix :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding Prix}" />
-                    <TextBlock Text=" €" />
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="MontantCharges :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding MontantCharges}" />
-                    <TextBlock Text=" €" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding NbEtages}" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding NbPieces}" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="NumEtage :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding NumEtage}" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding Surface}" />
-                    <TextBlock Text=" m²" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding EnergieChauffage}" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding TypeChauffage}" />
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="" />
+                    
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                    <!-- <TextBlock Text="Titre :" Style="{StaticResource Detail}" /> -->
+                    <TextBlock Text="{Binding Titre}"  FontWeight="Bold" FontSize="26"/>
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="DateMiseEnTransaction :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding DateMiseEnTransaction}" />
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="TransactionEffectuee :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding TransactionEffectuee}" />
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="DateTransaction :" Style="{StaticResource Detail}" />
-                    <TextBlock Text="{Binding DateTransaction}" />
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="" />
-                </StackPanel>
-            
-                <Grid >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" Text="Description :" Style="{StaticResource Detail}" />
-                    <TextBlock Grid.Column="1" Text="{Binding Description}" TextWrapping="Wrap"/>
+
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center">
+                        <TextBlock Text="{Binding Prix}" FontSize="20" />
+                        <TextBlock Text=" €" FontSize="20"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center">
+                        <TextBlock Text="{Binding NbPieces}" FontSize="20"/>
+                        <TextBlock Text=" pièces" FontSize="20" />
+                    </StackPanel>
+
+
+
+
+
+                    <!-- Affiche les images de la liste contenue dans l'objet -->
+                    <ListBox Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" ItemsSource="{Binding PhotosBase64}" >
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding   Converter={StaticResource simpleConverter}}" Width="400" Height="220" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ListBox>
+                    
+                    
+                    
+
+                    <Grid Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Description :" FontSize="15" FontWeight="Bold"/>
+                        <TextBlock Grid.Row="2" Text="{Binding Description}" TextWrapping="Wrap"/>
+                    </Grid>
+
+
+
+                    <Grid Grid.Column="0" Grid.Row="9" Background="GhostWhite"  HorizontalAlignment="Center">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.Column="2"  Orientation="Horizontal">
+                            <TextBlock Text="{Binding TypeTransaction}" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                            <TextBlock Text="{Binding TypeBien}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                            <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding Adresse}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+                            <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding Ville}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
+                            <TextBlock Text="Code postal :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding CodePostal}" />
+                        </StackPanel>
+
+                </Grid >
+
+
+
+                    <Grid Grid.Column="1" Grid.Row="9" Background="GhostWhite" HorizontalAlignment="Center">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <TextBlock Text="Date de mise en transaction :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding DateMiseEnTransaction}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0">
+                            <TextBlock Text="Transaction effectue ? " Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding TransactionEffectuee}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0">
+                            <TextBlock Text="Date de la transaction :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding DateTransaction}" />
+                        </StackPanel>
+
+                    </Grid>
+
+
+                    <Grid Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2"  HorizontalAlignment="Center">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <TextBlock Text="Type de chauffage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding TypeChauffage}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0">
+                            <TextBlock Text="Energie de chauffage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding EnergieChauffage}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2">
+                            <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding Surface}" />
+                            <TextBlock Text=" m²" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2">
+                            <TextBlock Text="Montant des charges :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding MontantCharges}" />
+                            <TextBlock Text=" €" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="4">
+                            <TextBlock Text="Nombre d'étage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding NbEtages}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="4">
+                            <TextBlock Text="Numéro d'étage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="{Binding NumEtage}" />
+                        </StackPanel>
+
+                    </Grid>
+
                 </Grid>
 
-                <!-- Affiche les images de la liste contenue dans l'objet -->
-                <ListBox Grid.Column="2" ItemsSource="{Binding PhotosBase64}" >
-                    <ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel />
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Image Source="{Binding   Converter={StaticResource simpleConverter}}" Width="400" Height="220" />
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ListBox>
-
             </StackPanel>
+                
 
         </ScrollViewer>
     </Grid>
