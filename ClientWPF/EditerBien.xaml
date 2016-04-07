@@ -108,7 +108,7 @@
         </Grid.RowDefinitions>
         
                     <TextBlock Text="Titre :" Style="{StaticResource Detail}"  Grid.Row="1" Grid.Column="0" />
-                    <TextBox x:Name="BoxName" Width="150" HorizontalAlignment="Left" Text="{Binding myBien.Titre, Mode=TwoWay}" Grid.Row="1" Grid.Column="1"/>
+                    <TextBox x:Name="BoxName" Margin="0,0,5,0" HorizontalAlignment="Left" Text="{Binding myBien.Titre, Mode=TwoWay}" Grid.Row="1" Grid.Column="1"/>
 
                     <TextBlock Text="Type de transaction :" Style="{StaticResource Detail}" Grid.Row="3" Grid.Column="0" />
                     <ComboBox x:Name="type_transaction" HorizontalAlignment="Left" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}" Grid.Row="3" Grid.Column="1" SelectedValue="{Binding myBien.TypeTransaction , Mode=TwoWay}"/>
