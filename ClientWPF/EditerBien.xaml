@@ -7,11 +7,11 @@
          xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="EditerBien" Height="538" Width="350">
+        Title="EditerBien" Height="538" Width="370">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Margin" Value="0,0,5,0" />
+            <Setter Property="Margin" Value="5,0,5,0" />
             <Setter Property="TextAlignment" Value="Right" />
             <Setter Property="Foreground" Value="Black"/>
         </Style>
@@ -110,12 +110,12 @@
                     <TextBlock Text="Titre :" Style="{StaticResource Detail}"  Grid.Row="1" Grid.Column="0" />
                     <TextBox x:Name="BoxName" Width="150" HorizontalAlignment="Left" Text="{Binding myBien.Titre, Mode=TwoWay}" Grid.Row="1" Grid.Column="1"/>
 
-                    <TextBlock Text="TypeTransaction :" Style="{StaticResource Detail}" Grid.Row="3" Grid.Column="0" />
+                    <TextBlock Text="Type de transaction :" Style="{StaticResource Detail}" Grid.Row="3" Grid.Column="0" />
                     <ComboBox x:Name="type_transaction" HorizontalAlignment="Left" Width="80" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeTransaction}}" Grid.Row="3" Grid.Column="1" SelectedValue="{Binding myBien.TypeTransaction , Mode=TwoWay}"/>
 
 
-                    <TextBlock Text="TypeBien :" Style="{StaticResource Detail}" Grid.Row="5" Grid.Column="0"/>
-                    <ComboBox x:Name="type_biens" HorizontalAlignment="Left" Width="80" Grid.Row="5" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" SelectedValue="{Binding myBien.TypeBien, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="5" Grid.Column="0"><Run Text="Type de bien "/><Run Text=":"/></TextBlock>
+            <ComboBox x:Name="type_biens" HorizontalAlignment="Left" Width="80" Grid.Row="5" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeBien}}" SelectedValue="{Binding myBien.TypeBien, Mode=TwoWay}"/>
 
                     <TextBlock Text="Adresse :" Style="{StaticResource Detail}" Grid.Row="7" Grid.Column="0" />
                  <TextBox x:Name="BoxAdresse" HorizontalAlignment="Left" Width="150" Grid.Row="7" Grid.Column="1" Text="{Binding myBien.Adresse, Mode=TwoWay}"/>
@@ -123,46 +123,46 @@
                     <TextBlock Text="Ville :" Style="{StaticResource Detail}" Grid.Row="9" Grid.Column="0"/>
                     <TextBox x:Name="BoxVille" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.Ville, Mode=TwoWay}" Grid.Row="9" Grid.Column="1"/>
 
-                    <TextBlock Text="CodePostal :" Style="{StaticResource Detail}" Grid.Row="11" Grid.Column="0"/>
-                    <TextBox x:Name="BoxCodePostal" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.CodePostal, Mode=TwoWay}" Grid.Row="11" Grid.Column="1"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="11" Grid.Column="0"><Run Text="Code"/><Run Text=" "/><Run Text="p"/><Run Text="ostal :"/></TextBlock>
+            <TextBox x:Name="BoxCodePostal" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.CodePostal, Mode=TwoWay}" Grid.Row="11" Grid.Column="1"/>
 
                     <TextBlock Text="Prix :" Style="{StaticResource Detail}" Grid.Row="13" Grid.Column="0"/>
                      <TextBox x:Name="BoxPrix" HorizontalAlignment="Left" Width="150" Grid.Row="13" Grid.Column="1" Text="{Binding myBien.Prix, Mode=TwoWay}"/>
 
-                    <TextBlock Text="MontantCharges :" Style="{StaticResource Detail}" Grid.Row="15" Grid.Column="0"/>
-                    <TextBox x:Name="BoxMontantCharges" HorizontalAlignment="Left" Width="150" Grid.Row="15" Grid.Column="1" Text="{Binding myBien.MontantCharges, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="15" Grid.Column="0"><Run Text="Montant des charges "/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxMontantCharges" HorizontalAlignment="Left" Width="150" Grid.Row="15" Grid.Column="1" Text="{Binding myBien.MontantCharges, Mode=TwoWay}"/>
 
-                    <TextBlock Text="NbEtages :" Style="{StaticResource Detail}" Grid.Row="17" Grid.Column="0"/>
-                    <TextBox x:Name="BoxNbEtagess" HorizontalAlignment="Left" Width="150" Grid.Row="17" Grid.Column="1" Text="{Binding myBien.NbEtages, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="17" Grid.Column="0"><Run Text="Nombre d'étages "/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxNbEtagess" HorizontalAlignment="Left" Width="150" Grid.Row="17" Grid.Column="1" Text="{Binding myBien.NbEtages, Mode=TwoWay}"/>
 
-                    <TextBlock Text="NbPieces :" Style="{StaticResource Detail}" Grid.Row="19" Grid.Column="0"/>
-                    <TextBox x:Name="BoxNbPieces" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.NbPieces, Mode=TwoWay}" Grid.Row="19" Grid.Column="1"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="19" Grid.Column="0"><Run Text="Nombre de pièces "/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxNbPieces" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.NbPieces, Mode=TwoWay}" Grid.Row="19" Grid.Column="1"/>
 
-                    <TextBlock Text="NumEtage :" Style="{StaticResource Detail}" Grid.Row="21" Grid.Column="0" />
-                    <TextBox x:Name="BoxNumEtage" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.NumEtage, Mode=TwoWay}" Grid.Row="21" Grid.Column="1"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="21" Grid.Column="0" ><Run Text="Numéro d'étage "/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxNumEtage" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.NumEtage, Mode=TwoWay}" Grid.Row="21" Grid.Column="1"/>
 
                     <TextBlock Text="Surface :" Style="{StaticResource Detail}" Grid.Row="23" Grid.Column="0"/>
                     <TextBox x:Name="BoxSurface" HorizontalAlignment="Left" Width="150" Text="{Binding myBien.Surface, Mode=TwoWay}" Grid.Row="23" Grid.Column="1"/>
 
-                    <TextBlock Text="EnergieChauffage :" Style="{StaticResource Detail}" Grid.Row="25" Grid.Column="0"/>
-                    <ComboBox x:Name="energies_chauffage" HorizontalAlignment="Left" Width="80" Grid.Row="25" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" SelectedValue="{Binding myBien.EnergieChauffage, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="25" Grid.Column="0"><Run Text="Energie"/><Run Text=" de c"/><Run Text="hauffage :"/></TextBlock>
+            <ComboBox x:Name="energies_chauffage" HorizontalAlignment="Left" Width="80" Grid.Row="25" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderEnergieChauffage}}" SelectedValue="{Binding myBien.EnergieChauffage, Mode=TwoWay}"/>
 
-                    <TextBlock Text="TypeChauffage :" Style="{StaticResource Detail}" Grid.Row="27" Grid.Column="0"/>
-                    <ComboBox x:Name="types_chauffages" HorizontalAlignment="Left" Width="80" Grid.Row="27" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" SelectedValue="{Binding myBien.TypeChauffage, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="27" Grid.Column="0"><Run Text="Type de chauffage "/><Run Text=":"/></TextBlock>
+            <ComboBox x:Name="types_chauffages" HorizontalAlignment="Left" Width="80" Grid.Row="27" Grid.Column="1" ItemsSource="{Binding Source={StaticResource TransactionTypesProviderTypeChauffage}}" SelectedValue="{Binding myBien.TypeChauffage, Mode=TwoWay}"/>
 
-                    <TextBlock Text="DateMiseEnTransaction :" Style="{StaticResource Detail}" Grid.Row="29" Grid.Column="0" />
-                    <TextBox x:Name="BoxDateMiseEnTransaction" HorizontalAlignment="Left" Width="150" Grid.Row="29" Grid.Column="1" Text="{Binding myBien.DateMiseEnTransaction, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="29" Grid.Column="0" ><Run Text="Date de mise en transaction "/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxDateMiseEnTransaction" HorizontalAlignment="Left" Width="150" Grid.Row="29" Grid.Column="1" Text="{Binding myBien.DateMiseEnTransaction, Mode=TwoWay}"/>
 
-                    <TextBlock Text="TransactionEffectuee :" Style="{StaticResource Detail}" Grid.Row="31" Grid.Column="0" />
-                    <CheckBox x:Name="BoxTransactionEffectuee" HorizontalAlignment="Left" Grid.Row="31" Grid.Column="1" IsChecked="{Binding myBien.TransactionEffectuee, Mode=TwoWay}"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="31" Grid.Column="0" ><Run Text="Transaction"/><Run Text=" e"/><Run Text="ffectuee :"/></TextBlock>
+            <CheckBox x:Name="BoxTransactionEffectuee" HorizontalAlignment="Left" Grid.Row="31" Grid.Column="1" IsChecked="{Binding myBien.TransactionEffectuee, Mode=TwoWay}"/>
 
-                    <TextBlock Text="DateTransaction :" Style="{StaticResource Detail}" Grid.Row="33" Grid.Column="0"/>
-                     <TextBox x:Name="BoxDateTransaction" HorizontalAlignment="Left" Grid.Row="33" Grid.Column="1" Text="{Binding myBien.DateTransaction, Mode=TwoWay}" Width="150"/>
+            <TextBlock Style="{StaticResource Detail}" Grid.Row="33" Grid.Column="0"><Run Text="Date de transaction"/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="BoxDateTransaction" HorizontalAlignment="Left" Grid.Row="33" Grid.Column="1" Text="{Binding myBien.DateTransaction, Mode=TwoWay}" Width="150"/>
 
                     <TextBlock Text="Description :" Style="{StaticResource Detail}" Grid.Row="35" Grid.Column="0" />
                     <TextBox x:Name="BoxDescription" HorizontalAlignment="Left" Height="100" Margin="0,0,5,0" Grid.Row="35" Grid.Column="1" Text="{Binding myBien.Description, Mode=TwoWay}" />
 
-                <Button Grid.Row="37" Grid.Column="0" Grid.ColumnSpan="2" Click="Button_Click">Valider</Button>
+                <Button Grid.Row="37" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,0,5,0" Click="Button_Click">Valider</Button>
 
 
 
