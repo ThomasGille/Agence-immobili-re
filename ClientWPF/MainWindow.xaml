@@ -17,6 +17,7 @@
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Margin" Value="0,0,5,0" />
             <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="Foreground" Value="White"/>
         </Style>
 
         <Style x:Key="Detail" TargetType="TextBlock">
@@ -25,6 +26,10 @@
             <Setter Property="Margin" Value="0,0,5,0" />
             <Setter Property="TextAlignment" Value="Right" />
             <Setter Property="Foreground" Value="Blue"/>
+        </Style>
+
+        <Style x:Key="binding" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
         </Style>
     </Window.Resources>
 
@@ -83,23 +88,23 @@
                        
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Titre :" Style="{StaticResource Titre}" />
-                                <TextBlock Text="{Binding Titre}" />
+                                <TextBlock Text="{Binding Titre}" Style="{StaticResource binding}"/>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Prix :" Style="{StaticResource Titre}" />
-                                <TextBlock Text="{Binding Prix}" />
-                                <TextBlock Text=" €" />
+                                <TextBlock Text="{Binding Prix}" Style="{StaticResource binding}"/>
+                                <TextBlock Text=" €" Style="{StaticResource binding}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="CodePostal :" Style="{StaticResource Titre}" />
-                                <TextBlock Text="{Binding CodePostal}" />
+                                <TextBlock Text="{Binding CodePostal}" Style="{StaticResource binding}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Ville :" Style="{StaticResource Titre}" />
-                                <TextBlock Text="{Binding Ville}" />
+                                <TextBlock Text="{Binding Ville}" Style="{StaticResource binding}"/>
                             </StackPanel>
 
                         </StackPanel>
