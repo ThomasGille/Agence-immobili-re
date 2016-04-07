@@ -63,7 +63,7 @@ namespace ClientWPF
             parent_windows.IsEnabled = true;
         }
 
-        private void submit_form(object sender, RoutedEventArgs e)
+        private async void submit_form(object sender, RoutedEventArgs e)
         {
             ServiceAgence.CriteresRechercheBiensImmobiliers criteres = MainWindow.initNullCriteres();
 
@@ -76,7 +76,7 @@ namespace ClientWPF
             String town = this.textbox_town.Text;
             criteres.Ville = town;
 
-            this.parent_windows.new_research(criteres);
+            await this.parent_windows.new_research(criteres);
             this.Close();
         } 
     }
