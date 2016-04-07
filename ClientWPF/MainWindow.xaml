@@ -50,11 +50,16 @@
 			  />
                 
             </MenuItem>
+            
             <MenuItem Header="Gestion">
                 <MenuItem Header="Ajout" HorizontalAlignment="Left" Width="140" Click="MenuAjout_Click"/>
                 <MenuItem Header="Supression" HorizontalAlignment="Left" Width="160" Click="Supression_click"/>
                 <MenuItem Header="Edition" HorizontalAlignment="Left" Width="160" Click="EditionBien_click"/>
             </MenuItem>
+
+            <MenuItem Header="Reinitialiser" Click="Reinitialiser_research">
+            </MenuItem>
+
         </Menu>
 
         <!-- Affiche les miniatures dans la colonne de gauche -->

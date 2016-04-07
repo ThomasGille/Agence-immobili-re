@@ -122,6 +122,11 @@ namespace ClientWPF
             }
         }
 
+        private void Reinitialiser_research(object sender, RoutedEventArgs e)
+        {
+             this.new_research(MainWindow.initNullCriteres());
+        }
+
         private void Supression_click(object sender, RoutedEventArgs e)
         {
             if (((ServiceAgence.BienImmobilierBase)mListBox.SelectedItem) == null)
