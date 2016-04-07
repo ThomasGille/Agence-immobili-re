@@ -15,17 +15,14 @@
         <Style x:Key="Titre" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
             <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Margin" Value="0,0,5,0" />
+            <Setter Property="Margin" Value="10,0,5,0" />
             <Setter Property="TextAlignment" Value="Right" />
             <Setter Property="Foreground" Value="White"/>
         </Style>
 
         <Style x:Key="Detail" TargetType="TextBlock">
-            <Setter Property="TextTrimming" Value="None" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Margin" Value="0,0,5,0" />
-            <Setter Property="TextAlignment" Value="Right" />
-            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="Black"/>
         </Style>
 
         <Style x:Key="binding" TargetType="TextBlock">
@@ -68,7 +65,7 @@
         </Menu>
 
         <!-- Affiche les miniatures dans la colonne de gauche -->
-        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Row="1" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged" Background="Black">
+        <ListBox x:Name="mListBox" ItemsSource="{Binding liste}" Grid.Row="1" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged" Background="#212121">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -87,8 +84,8 @@
                         <StackPanel Orientation="Vertical" Grid.Column="1">
                        
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Titre :" Style="{StaticResource Titre}" />
-                                <TextBlock Text="{Binding Titre}" Style="{StaticResource binding}"/>
+                                <TextBlock Text="Titre :" Style="{StaticResource Titre}" Padding="0,5,0,0"/>
+                                <TextBlock Text="{Binding Titre}" Style="{StaticResource binding}" Padding="0,5,0,0"/>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
@@ -197,7 +194,7 @@
                             <RowDefinition Height="10"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Text="Description :" FontSize="15" FontWeight="Bold"/>
+                        <TextBlock Grid.Row="0" Text="Description : " FontSize="15" FontWeight="Bold"/>
                         <TextBlock Grid.Row="2" Text="{Binding Description}" TextWrapping="Wrap"/>
                     </Grid>
 
@@ -223,25 +220,25 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Grid.Row="0" Grid.Column="2"  Orientation="Horizontal">
-                            <TextBlock Text="{Binding TypeTransaction}" />
+                            <TextBlock Text="{Binding TypeTransaction}" FontSize="12" FontWeight="Bold"/>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
-                            <TextBlock Text="{Binding TypeBien}" />
+                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="{Binding TypeBien}" FontSize="12" FontWeight="Bold"/>
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
-                            <TextBlock Text="Adresse :" Style="{StaticResource Detail}" />
+                        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                            <TextBlock Text="Adresse : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding Adresse}" />
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
-                            <TextBlock Text="Ville :" Style="{StaticResource Detail}" />
+                        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                            <TextBlock Text="Ville : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding Ville}" />
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
-                            <TextBlock Text="Code postal :" Style="{StaticResource Detail}" />
+                        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                            <TextBlock Text="Code postal : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding CodePostal}" />
                         </StackPanel>
 
@@ -261,7 +258,7 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="Date de mise en transaction :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Date de mise en transaction : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding DateMiseEnTransaction}" />
                         </StackPanel>
 
@@ -271,14 +268,14 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0">
-                            <TextBlock Text="Date de la transaction :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Date de la transaction : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding DateTransaction}" />
                         </StackPanel>
 
                     </Grid>
 
 
-                    <Grid Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2"  HorizontalAlignment="Center">
+                    <Grid Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2" Background="GhostWhite" HorizontalAlignment="Center">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
@@ -295,34 +292,34 @@
                         </Grid.ColumnDefinitions>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="Type de chauffage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Type de chauffage : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding TypeChauffage}" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0">
-                            <TextBlock Text="Energie de chauffage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Energie de chauffage : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding EnergieChauffage}" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2">
-                            <TextBlock Text="Surface :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Surface : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding Surface}" />
                             <TextBlock Text=" m²" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2">
-                            <TextBlock Text="Montant des charges :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Montant des charges : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding MontantCharges}" />
                             <TextBlock Text=" €" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="4">
-                            <TextBlock Text="Nombre d'étage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Nombre d'étage : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding NbEtages}" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="4">
-                            <TextBlock Text="Numéro d'étage :" Style="{StaticResource Detail}" />
+                            <TextBlock Text="Numéro d'étage : " Style="{StaticResource Detail}" />
                             <TextBlock Text="{Binding NumEtage}" />
                         </StackPanel>
 
