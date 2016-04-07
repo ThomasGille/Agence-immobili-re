@@ -88,7 +88,7 @@ namespace ClientWPF
             return criteres;
         }
 
-        public void new_research(ServiceAgence.CriteresRechercheBiensImmobiliers criteres)
+        public async Task new_research(ServiceAgence.CriteresRechercheBiensImmobiliers criteres)
         {
             using (ServiceAgence.AgenceClient client = new ServiceAgence.AgenceClient())
             {
@@ -122,9 +122,9 @@ namespace ClientWPF
             }
         }
 
-        private void Reinitialiser_research(object sender, RoutedEventArgs e)
+        private async void Reinitialiser_research(object sender, RoutedEventArgs e)
         {
-             this.new_research(MainWindow.initNullCriteres());
+             await new_research(MainWindow.initNullCriteres());
         }
 
         private void Supression_click(object sender, RoutedEventArgs e)
@@ -166,9 +166,9 @@ namespace ClientWPF
             refresh();
         }
 
-        public void refresh()
+        public async void refresh()
         {
-            new_research(_lastCritere);
+            await new_research(_lastCritere);
         }
 
         private void EditionBien_click(object sender, RoutedEventArgs e)
