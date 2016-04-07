@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:s="clr-namespace:ClientWPF.ServiceAgence"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        Title="AjoutBien" Height="578.395" Width="800">
+        Title="AjoutBien" Height="600" Width="800">
     <Window.Resources>
         <Style x:Key="Detail" TargetType="TextBlock">
             <Setter Property="TextTrimming" Value="None" />
